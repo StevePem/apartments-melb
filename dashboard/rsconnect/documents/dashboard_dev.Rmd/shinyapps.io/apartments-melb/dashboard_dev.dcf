@@ -1,0 +1,12 @@
+name: dashboard_dev
+title: dashboard_dev
+username: apartments-melb
+account: apartments-melb
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 10066926
+bundleId: 7756875
+url: https://apartments-melb.shinyapps.io/dashboard_dev/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

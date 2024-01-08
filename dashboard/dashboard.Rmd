@@ -208,8 +208,6 @@ data.text <- HTML("Data sources: <br>
   
 'Apartments' are dwellings classified by DTP as 'attached 4 storey or more' (to 2016) or 'apartments' (from 2017), and other developments with 100 dwellings per hectare or more. <br><br>
 
-[Currently, the apartment figures for 2022 only include apartments for the first half of the year. The remainder will be added once the relevant data is available.] <br><br>
-  
 'Corridors' are the stations or stops that make up a line or route, or section of a line or route. Corridors exclude areas in Central Melbourne. <br><br>
 
 'Annual services' are the annual number of public transport services operating within 800m walking distance of the relevant apartments. <br><br>
@@ -946,7 +944,7 @@ renderLeaflet({
       opacity = 1, 
       fillColor = "#2c7bb6",
       fillOpacity = 0.65,
-      popup = ~paste("<b>", display_name, "</b><br>",
+      popup = ~paste(ifelse(display_name != "", paste("<b>", display_name, "</b><br>"), ""),
                      "No of apartments:", hi_dens_dwel, "<br>",
                      "Year constructed:", year_comp, "<br>")) %>% 
      addCircleMarkers(
@@ -957,7 +955,7 @@ renderLeaflet({
       opacity = 1, 
       fillColor = "#0000ff",
       fillOpacity = 0.65,
-      popup = ~paste("<b>", display_name, "</b><br>",
+      popup = ~paste(ifelse(display_name != "", paste("<b>", display_name, "</b><br>"), ""),
                      "No of apartments:", hi_dens_dwel, "<br>",
                      "Year constructed:", year_comp, "<br>")) %>% 
     addControl(html = html_legend, position = "topright") %>%

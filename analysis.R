@@ -21,8 +21,9 @@
 # =============================================================================#
 
 # Function to combine apartment, train, tram and bus data, and produce:
-# - an output table named 'Tables/output_data_[geog].csv', and
-# - an output plot named 'Images/output_plot_[geog].png'.
+# - an output table named 'Tables/output data/output_data_[geog].csv', 
+# - an output plot named 'Images/illustration plots/plot_[geog].png', and
+# - an output map named 'Images/illustration maps/map_[geog].png'.
 
 # Note that running the function will write these outputs, overwriting any prior
 analysis <- function(selection.areas, geog) {
@@ -150,7 +151,10 @@ analysis <- function(selection.areas, geog) {
   
   # recombine the 'correct' and 'split' groups
   apartments <- rbind(apartments.fin.year.correct,
-                      apartments.fin.year.split)
+                      apartments.fin.year.split) %>%
+    
+    # remove 2023 financial year apartments (split out from 2022 calendar year)
+    filter(fin_year_comp <= 2022)
   
   
   ### 2.1.3 Data for baseline apartments for 2004 ----
@@ -366,8 +370,9 @@ analysis <- function(selection.areas, geog) {
   
   caption.text <- "Data sources: DTP (annual apartments), ABS census 2006 (apartment baseline), DTP (train and tram services volumes, train capacities), Yarra Trams (tram capacities), 
 GTFS data (bus service volumes), DTP and bus operators (bus capacities). 'Apartments' are dwellings classified by DTP as 'attached 4 storey or more' (to 2016) 
-or 'apartments'  (from 2017), and other developments with 100 dwellings per hectare or more. Apartments for the 2022 financial year include July to December 2021 only.  
-Bus and tram services are those operating within 800m walking distance of the relevant apartments."
+or 'apartments' (from 2017), and other developments with 100 dwellings per hectare or more. Bus, train and tram services are those operating within 800m walking 
+distance of the relevant apartments."  
+
   
   
   # 3. Process selected areas ----
@@ -382,8 +387,12 @@ Bus and tram services are those operating within 800m walking distance of the re
                   "| Now processing apartments and public transport for", 
                   geog))
     } else if (geog == "LGAs") {
-      lga.name <- str_to_title(selection.areas[i, "LGA_NAME"] %>%
+      lga.name <- str_to_title(selection.areas$LGA_NAME[i] %>%
                                  st_drop_geometry())
+      # adjust for Merri-bek
+      if (lga.name == "Merri-Bek") {
+        lga.name <- "Merri-bek"
+      }
       print(paste(Sys.time(), 
                   "| Now processing apartments and public transport for LGA no", 
                   i, "of", nrow(selection.areas), ":", lga.name))
@@ -1183,7 +1192,7 @@ analysis(selection.areas = LGAs,
 
 ## Option 3 - Corridors ----
 ## -----------------------------------------------------------------------------#
-# corridors are train and tram routes [may later be extended to some bus]
+# corridors are train and tram routes, and some bus
 
 # load corridors (if not already saved); also loads cordon
 source("./corridors.R")

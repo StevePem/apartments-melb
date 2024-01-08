@@ -13,10 +13,10 @@ library(dplyr)
 # dataX <- read.csv("../Tables/output_data_LGA_Boroondara.csv")
 # mylocation <- "Boroondara"
 # year.text <- "2004-2022"
-# caption.text <- "Data sources: DTP (annual apartments), ABS census 2006 (apartment baseline), DTP (train and tram services volumes, train capacities), Yarra Trams (tram capacities), 
+# caption.text <- "Data sources: DTP (annual apartments), ABS census 2006 (apartment baseline), DTP (train and tram services volumes, train capacities), Yarra Trams (tram capacities),
 # GTFS data (bus service volumes), DTP and bus operators (bus capacities). 'Apartments' are dwellings classified by DTP as 'attached 4 storey or more' (to 2016) 
-# or 'apartments'  (from 2017), and other developments with 100 dwellings per hectare or more. Apartments for the 2022 financial year include July to December 2021 only.  
-# Bus and tram services are those operating within 800m walking distance of the relevant apartments."
+# or 'apartments' (from 2017), and other developments with 100 dwellings per hectare or more. Bus, train and tram services are those operating within 800m walking 
+# distance of the relevant apartments."
 # display.ratio <- 30
 # 
 # data <- dataX %>%

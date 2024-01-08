@@ -1,6 +1,10 @@
 # Review of BH files downloaded from https://www.planning.vic.gov.au/land-use-and-population-research/urban-development-program 
 # for 2013-20, and 2021 files provided by DELWP
 
+library(dplyr)
+library(sf)
+library(ggplot2)
+
 # 1. Read in data ----
 # -----------------------------------------------------------------------------#
 ## 1.1 helper function to read zipped GIS files ----
@@ -248,7 +252,7 @@ write.csv(BH_high_density_2013_17 %>% st_drop_geometry(),
 
 # 3. Check developed/approved projects with developed/approved status ----
 # -----------------------------------------------------------------------------#
-# Email from D Matthews, DELWP, 21 Sep 22022: from 2018, instead of 'developed', lots are shown
+# Email from D Matthews, DELWP, 21 Sep 2202: from 2018, instead of 'developed', lots are shown
 # as 'approved with a title'
 # See section 2.1 for development status.
 # This section 3 considers both 'developed' (before 2018) and 'approved' (from 2018) 

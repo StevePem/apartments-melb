@@ -1,14 +1,12 @@
 #==============================================================================#
 #   Prepare inputs for dashboard
 #
-#   Steve Pemberton, [August 2023]
+#   Steve Pemberton, [January 2024]
 #
 # 
 #   Organised as follows [review and expand as needed]
 #   1  Process apt, pop and service data
 #   2  Process spatial data for map
-#   3  
-#   4  
 #
 #==============================================================================#
 
@@ -29,20 +27,12 @@ dir_walk(path="./functions/",source, recurse=T, type = "file")
 ## -----------------------------------#
 
 LGAs <- read.csv("../Tables/output_data_table_LGAs.csv") %>%
-  # # ### fix Greater Melbourne name  # TO CHECK: appeared as '/Greater Melbourne'; 
-  # # should have been fixed in analysis.R, so (if it works for updated data) can delete this
-  # mutate(location = ifelse(grepl("Greater Melbourne", location), 
-  #                          "Greater Melbourne", location)) %>%
   # add type field
   mutate(type = ifelse(location == "Greater Melbourne", "Greater Melbourne", "LGA"))
 
 corridors <- read.csv("../Tables/output_data_table_corridor_own_services_with_apts.csv") %>%
   # remove "with_apts_'
   mutate(location = gsub("with_apts_", "", location)) %>%
-  # # ### fix Lilydale corridor description  # TO CHECK: appeared as 'East Richmond to Lilydale';
-  # # should have been fixed in corridors.R, so (if it works for updated data) can delete this
-  # mutate(location = ifelse(location == "Lilydale (East Richmond to Lilydale)", 
-  #                          "Lilydale (East Ringwood to Lilydale)", location)) %>%
   # add type field: train has no route no; tram route no < 200; bus route no 200+
   mutate(type = case_when(
     !grepl("Route", location)                    ~ "Train",
@@ -120,7 +110,9 @@ LGAs <-
                          "PORT PHILLIP", "STONNINGTON", "WHITEHORSE", "WHITTLESEA",
                          "WYNDHAM", "YARRA RANGES", "YARRA")) %>%
   arrange(LGA_NAME) %>%
-  mutate(name = str_to_title(LGA_NAME)) %>%
+  mutate(name = case_when(LGA_NAME == "MERRI-BEK" ~ "Merri-bek",
+                          TRUE~ str_to_title(LGA_NAME))) %>%
+  # mutate(name = ifelse("Merri-Bek", "Merri-bek", name)) %>%
   dplyr::select(name)
 
 areas <- rbind(Melb.GCCSA, LGAs)
@@ -323,8 +315,10 @@ for (i in 1:nrow(corridors)) {
 # keep only centroid geometry and items needed for display)
 apartment.centroids <- apartments %>%
   st_centroid() %>%
-  mutate(address = paste0(street_num, " ", street_name, " ", street_type, ", ", 
-                          str_to_title(suburb))) %>%
+  mutate(address = paste0(ifelse(!is.na(street_num), paste0(street_num, " "), ""),
+                          ifelse(!is.na(street_name), paste0(street_name, " "), ""), 
+                          if_else(!is.na(street_type), street_type, ""),
+                          if_else(!is.na(suburb), paste0(", ", str_to_title(suburb)), ""))) %>%
   mutate(display_name = case_when(is.na(proj_name) ~ address,
                                   proj_name == " " ~ address,
                                   TRUE             ~ str_to_title(proj_name))) %>%
@@ -334,7 +328,6 @@ apartment.centroids <- apartments %>%
 saveRDS(apartment.centroids, "./dashboard/apartments.rds")
 
 # save walkable catchment output
-# st_write(walkable.catchments, "./dashboard/walkable_catchments.sqlite")
 walkable.catchment.output <- walkable.catchments %>%
   st_simplify(., preserveTopology = TRUE, dTolerance = 10) %>%
   st_transform(4326)
@@ -347,8 +340,5 @@ simplified.areas <- areas %>%
   st_simplify(., preserveTopology = TRUE, dTolerance = 25) %>%
   st_transform(4326)
 
-# st_write(areas, "./dashboard/areas_base.sqlite")
-# st_write(simplified.areas, "./dashboard/areas_simp.sqlite")
 saveRDS(simplified.areas, "./dashboard/areas.rds")
 
-# st_write(simplified.areas, "./dashboard/testareas.geojson")

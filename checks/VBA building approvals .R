@@ -1,4 +1,5 @@
-# Checks of VBA building approvals for [yars...], downloaded from ...
+# Checks of VBA building approvals for 2009-2022, downloaded from 
+# https://www.vba.vic.gov.au/about/data 
 
 # Used to check proportion of high density developments that are <10 dwellings
 # (and so excluded from MRS)

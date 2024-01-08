@@ -1,5 +1,7 @@
 # apartment cleaning checks
 
+# note - unless specifically noted, generally doesn't include projects from the 2022 file
+
 # 1.  Check how to deal with completed developments appearing in 2 consecutive years (see 2.2 in 'apartments.R') ----
 # -----------------------------------------------------------------------------#
 # We've been told by DELWP that the  MRS_ files are compiled on the basis that
@@ -297,15 +299,20 @@ View(test5 %>%
 
 # 2.  Check whether area_ha is adequate   ----
 # -----------------------------------------------------------------------------#
+# loading completed projects
+completed.projects <- st_read("../GIS/completedProjects.sqlite")
+
 test <- completed.projects %>%  # created in 2.2 of 'apartments.R'(also saved as 'GIS/completedProjects.sqlite')
   mutate(geometry = GEOMETRY) %>% ## only if necessary
   mutate(test_area = as.numeric(st_area(geometry) / 10000),  # sq m to ha
          area_diff = abs(area_ha - test_area))
-max(test$area_diff)  # 0.6920726
+max(test$area_diff)  # 0.6920726 up to 2021; same when including 2022, so 2022 must be accurate
 
 diff100 <- test %>%
   filter(area_diff >= 0.01) # difference > 100 sq m
-nrow(diff100)  # 28 - that is, 28 projects where area is out by 100 sq m or more
+nrow(diff100)  # 28 up to 2021 - that is, 28 projects where area is out by 
+# 100 sq m or more; 27 when including 2022, so one of the bad 2021 projects must
+# have been replaced in 2022
 
 # conclusion - area_ha will mostly be adequate; where it's 'wrong', we can't really be certain
 # whether the error is in the calculation of the area, or the digitisation of the boundaries!
@@ -1609,6 +1616,8 @@ completed.projects.third.filter <- completed.projects.second.filter %>%
 # -----------------------------------------------------------------------------#
 # general approach - include all apartments and att_4s, and all other projects
 # where density is 100+
+
+# Note that this does not include dwellings from the 2022 file
 
 ## 9.1 first pass - any apartments or att_4s ----
 ## ------------------------------------#

@@ -1,7 +1,7 @@
 #==============================================================================#
 #   Investigation of apartment data
 #
-#   Steve Pemberton, [November 2022]
+#   Steve Pemberton, [January 2024]
 #
 # 
 #   Organised as follows [review and expand as needed]
@@ -68,6 +68,10 @@ for (i in 1:length(years)) {
            st_transform(., crs = 7899))
 
 }
+
+MRS_2022 <- 
+  read_zipped_GIS(zipfile = "../Data/UDP2022_MRS.zip",
+                  subpath = "/gda2020_vicgrid/esrishape/whole_of_dataset/victoria/UDP")
 
 # 1.3 read in GTFS data (no longer used) ----
 # -------------------------------------#
@@ -202,6 +206,27 @@ standard2017_21 <- function(year) {
                          file_year, geometry = SHAPE))
 }
 
+standard2022 <- function(year) {
+  MRS <- get(paste0("MRS_", as.character(year)))
+  
+  return(MRS %>%
+           # adding missing columns
+           mutate(project_id = paste0("2022_", row_number()),
+                  status = case_when(YEARCOMPL %in% c("2021", "2022") ~ "Completed",
+                                     TRUE ~ "Uncompleted"),
+                  proj_name = NA, proj_part = NA, street_num = NA, street_name = NA,
+                  street_type = NA, add_misc = NA, suburb = NA, 
+                  unknown = TOTAL_DWEL - (DETACHED + TOWNHOUSES + APARTMENTS),
+                  att_1s = NA, att_2_3s = NA, att_4s = NA, lga = NA, region = NA,
+                  file_year = year) %>%
+           dplyr::select(project_id, status, year_comp = YEARCOMPL, area_ha = AREAHA,
+                         proj_name, proj_part, street_num, street_name, street_type,
+                         add_misc, suburb, detached = DETACHED, townhouses = TOWNHOUSES, 
+                         apartments = APARTMENTS, unknown, att_1s, att_2_3s, att_4s, 
+                         total_dwel = TOTAL_DWEL, max_storeys = MAXSTOREYS, 
+                         lga, region, file_year, geometry))
+}
+
 
 standard_2004 <- standard2004_07(2004)
 standard_2005 <- standard2004_07(2005)
@@ -226,6 +251,8 @@ standard_2018 <- standard2017_21(2018)
 standard_2020 <- standard2017_21(2020)
 standard_2021 <- standard2017_21(2021)
 
+standard_2022 <- standard2022(2022)
+
 
 # 2.2 Compile single list of completed projects ----
 # -------------------------------------#
@@ -242,12 +269,15 @@ standard_2021 <- standard2017_21(2021)
 # NAs can be disregarded as they don't concern completed projects; and there is only 
 # one duplicate project ID (R15189) that affects completed projects
 
+# For 2022, no project_id has been provided (one has been created in the form
+# 2022_[row number]), so no filtering based on the project id applies
+
 # Begin by combining standardised files
 completed.projects <- rbind(standard_2004, standard_2005, standard_2006, standard_2007,
                             standard_2008, standard_2009, standard_2010, standard_2011,
                             standard_2012, standard_2013, standard_2014, standard_2015,
                             standard_2016, standard_2017, standard_2018, standard_2019,
-                            standard_2020, standard_2021) %>%
+                            standard_2020, standard_2021, standard_2022) %>%
   
   # Filter to projects marked as 'Completed' in their final file year (note - this
   # removes projects that are marked 'Completed' in one file year but then their
@@ -257,7 +287,7 @@ completed.projects <- rbind(standard_2004, standard_2005, standard_2006, standar
   # ungroup() %>%
   
   # Filter to only 'Completed' rows
-  filter(status == "Completed") %>% # 9923 obs
+  filter(status == "Completed") %>% # 9923 obs to 2021; 10436 obs including 2022
   
   # Determine completion year for each project, which is:
   # - projects with all file years before 2012: assumed to be the earliest file
@@ -280,12 +310,12 @@ completed.projects <- rbind(standard_2004, standard_2005, standard_2006, standar
   filter(total_dwel > 0) %>%
   
   # Retain only the latest file year for each project
-  filter(file_year == max(file_year)) %>% # 4975 projects
+  filter(file_year == max(file_year)) %>% # 4975 projects to 2021; 5488 projects including 2022
   ungroup()
 
-# Note that while there are 4975 projects, there are only 4974 project_ids,
+# Note that while there are 4975 projects to 2022, there are only 4974 project_ids,
 # because R15189 is used for two different projects
-# length(unique(completed.projects$project_id))  # 4974
+# length(unique(completed.projects$project_id))  # 4974 to 2021; 5487 including 2022
 
 
 # write output to file
@@ -296,7 +326,9 @@ st_write(completed.projects, "../GIS/completedProjectsWithDuplicates.sqlite", de
 # -------------------------------------#
 # While it is rare for a single project ID to be used for multiple projects (See
 # section 2.2, it is common for a single project to be repeated with different
-# project IDs.  This section 2.3 removes the duplicates)
+# project IDs.  And duplicated 2022 files will all have different project
+# ids, as none were provided in the base file and they were all created from
+# row numbers.  This section 2.3 removes the duplicates)
 
 # For more detail on this section, see 'apartment cleaning checks.R' sections #6, 7 and 8,
 # which progressively test and refine the approach for removing duplicates.  This section
@@ -316,7 +348,7 @@ st_write(completed.projects, "../GIS/completedProjectsWithDuplicates.sqlite", de
 # --------------------#
 completed.projects.with.duplicates <- st_read("../GIS/completedProjectsWithDuplicates.sqlite") %>%
   # add a unique x_id field, to serve as consistent identifier throughout section
-  mutate(x_id = row_number())  # 4975 obs.
+  mutate(x_id = row_number())  # 4975 obs. to 2021; 5488 obs including 2022
 
 
 ## 2.3.2 - filter to remove padded project_ids ----
@@ -324,9 +356,14 @@ completed.projects.with.duplicates <- st_read("../GIS/completedProjectsWithDupli
 # removes duplicate padded project_ids (eg R0302/R00302) where same street name and suburb
 completed.projects.first.filter <- completed.projects.with.duplicates %>%
   # make identifier consisting of unpadded project_id + street_name + suburb
-  mutate(identifier = paste(as.numeric(substring(project_id, 2)),
-                            tolower(street_name),
-                            tolower(suburb))) %>%
+  # but for 2022 file using unique project_id alone, as there are no addresses
+  mutate(identifier = case_when(
+    file_year == 2022 ~ project_id,
+    TRUE ~ paste(as.numeric(substring(project_id, 2)),
+                 tolower(street_name),
+                 tolower(suburb)))
+  ) %>%
+  
   # where there is a group with the same identifier, take completion date as
   # assumed from earlier file year, unless specified in a file year on or after
   # 2012, in which case take the year of completion from the latest file year
@@ -337,7 +374,7 @@ completed.projects.first.filter <- completed.projects.with.duplicates %>%
   # and keep only the latest file year for each identifier group (with year_comp
   # changed, as above, for years before 2012)
   filter(file_year == max(file_year)) %>%
-  ungroup()  # 4876 obs., removing 99
+  ungroup()  # 4876 obs. to 2021; 5389 obs including 2022; removing 99
 
 
 ## 2.3.3 - collect groups of intersecting projects ----
@@ -352,7 +389,7 @@ completed.projects.first.filter <- completed.projects.first.filter %>%
 
 intersections <- st_intersection(completed.projects.first.filter) %>%
   # omit where there is only one intersection (ie intersects itself)
-  filter(n.overlaps > 1) %>%  # 1001 intersections
+  filter(n.overlaps > 1) %>%  # 1001 intersections to 2021; 1605 including 2022
   # omit where not a polygon or collection (ie points and lines)
   filter(st_is(., c("POLYGON", "MULTIPOLYGON", "GEOMETRYCOLLECTION"))) %>% # 496 intersections
   # add column for intersection area
@@ -384,8 +421,13 @@ for (i in 1:nrow(intersections)) {
 
 # filter intersections to those which aren't 'small'
 intersections <- intersections %>%
-  filter(!row_number() %in% small.intersections) # 141 intersections
+  filter(!row_number() %in% small.intersections) # 141 intersections to 2021; 432 including 2022
 
+# note there are 513 completions in the 2022 file, made up of 295 with year_comp=2021 
+# and 218 with year_comp=2022; there are 291 new intersections arising from 2022,
+# which is close to the 295 year_comp=2021; it's likely that all these most of
+# the year_comp=2021 projects are genuine duplicates, with a few extra 2021
+# completions not recorded until 2022
 
 # create empty frame to hold intersecting groups, with same variables as 'completed.projects'
 intersecting.groups <- completed.projects.first.filter %>%
@@ -411,19 +453,19 @@ for (i in 1:nrow(intersections)) {
   intersecting.groups <- rbind(intersecting.groups,
                                projects)
 } 
-# 287 obs. in 141 groups
+# 287 obs. in 141 groups to 2021; 874 obs. in 432 groups including 2022
 
 
 ## 2.3.4 - filter to remove duplicate records from intersecting group based on address, area and dwelling details ----
 # --------------------#
 # Identifies intersecting groups where both street number and street name are the same, 
 # and area and total_dwel are each within 20% of group mean, and keeps only latest file year
+# Not effective for 2022 as no address details are provided
 
 group_ids <- unique(intersecting.groups$group_id)
 
 # empty dataframe to hold outputs
 intersecting.groups.flagged <- intersecting.groups %>% .[0, ]
-
 
 # loop through intersecting groups, and flag as 'keep', 'discard' or 'further checking'
 for (i in 1:length(group_ids)) {
@@ -437,24 +479,43 @@ for (i in 1:length(group_ids)) {
   # see whether or not there is more than one identifier  
   identifiers <- unique(group$identifier)
   
+  # check the maximum year
+  max.file.year <- max(group$file_year)
+  
   # find mean area_ha and total_dwell for group, and check whether all are within tolerances
   # (that is, 20% of mean area_ha and total_dwel for the group)
   mean.area_ha <- mean(group$area_ha)
   mean.total_dwel <- mean(group$total_dwel)
+  mean.year <- mean(group$year_comp)
   
   tolerances <- TRUE
   for (j in 1:nrow(group)) {
     # checking whether area/dwell are more than 20% from mean
-    if(abs(group[j, "area_ha"][[1]] - mean.area_ha) > mean.area_ha * 0.2 |
-       abs(group[j, "total_dwel"][[1]] - mean.total_dwel) > mean.total_dwel * 0.2) {
+    if(abs(group$area_ha[j] - mean.area_ha) > mean.area_ha * 0.2 |
+       abs(group$total_dwel[j] - mean.total_dwel) > mean.total_dwel * 0.2) {
       tolerances <- FALSE
     }
   }
   
+  # add tight area tolerance (1%) for 2021 duplicate completions where no address 
+  # identifiers: area within 1% of mean and dwel identical
+  tight.tolerances <- FALSE
+  for (j in 1:nrow(group)) {
+    if(mean.year == 2021 &
+       abs(group$area_ha[j] - mean.area_ha) <= mean.area_ha * 0.01 &
+       abs(group$total_dwel[j] - mean.total_dwel) == 0) {
+      tight.tolerances <- TRUE
+    }
+  }
+
+  
   # if only one (ie all have same identifier), AND area_ha and total_dwell are 
-  # within tolerances, then flag the highest file year to keep and others to discard
+  # within tolerances, AND there is no 2022 file involved (because its identifiers
+  # will be NA and so may make a false match), then flag the highest file year 
+  # to keep and others to discard
   if (length(identifiers) == 1 & 
-      tolerances == TRUE) {
+      tolerances == TRUE &
+      max.file.year < 2022) {
     
     # if they all have the same street identifier and area & dwel are within tolerances,
     # then keep the highest file year
@@ -473,8 +534,21 @@ for (i in 1:length(group_ids)) {
                               "keep",
                               "discard"))
     }
+    
+  } else if (nrow(group) == 2 &
+             tight.tolerances == TRUE) {
+    # for 2021 completions where there are only 2 group members and
+    # area is within 1% of mean and dwel is identical - 
+    # keep the highest file year (2022) (note - tests of '2 group members and 
+    # mean year is 2021' means either both are 2021, or - in theory - one is 
+    # 2020 and one is 2022; this approach is fine for either)
+    group <- group %>%
+      mutate(flag = if_else(file_year == max(file_year), 
+                            "keep",
+                            "discard"))
+    
   } else {
-    # if not all same identifier, flag for further checking
+    # if not all same identifier, and not a 2022 file duplicate, flag for further checking
     group <- group %>%
       mutate(flag = "further checking")
   }
@@ -493,7 +567,7 @@ keeps1 <- intersecting.groups.flagged %>%
 discards1 <- intersecting.groups.flagged %>%
   filter(flag == "discard") %>%
   .$x_id
-length(unique(discards1))  # 37 to discard
+length(unique(discards1))  # 64 to discard to 2021; 304 including 2022
 
 # extract 'further checking' for manual check
 intersecting.groups.manual.to.check <- intersecting.groups.flagged %>%
@@ -501,7 +575,8 @@ intersecting.groups.manual.to.check <- intersecting.groups.flagged %>%
   # add 'area_pct' column (concerting st_area to ha) to help identify extent of overlaps
   mutate(isec_pct = isec_area_ha / (as.numeric(st_area(GEOMETRY)) / 10000) * 100 ) %>%
   st_drop_geometry()
-length(unique(intersecting.groups.manual.to.check$group_id))  # 215 obs. in 106 groups
+length(unique(intersecting.groups.manual.to.check$group_id))  
+# 215 obs. in 106 groups to 2021; 268 obs. in 130 groups including 2022
 
 # save output for manual check
 write.csv(intersecting.groups.manual.to.check, "./isecManualToCheck.csv", row.names = FALSE)
@@ -533,7 +608,7 @@ keeps2 <- intersecting.groups.manual.checked %>%
 discards2 <- intersecting.groups.manual.checked %>%
   filter(flag == "discard") %>%
   .$x_id
-length(unique(discards2))  # 51 to discard
+length(unique(discards2))  # 51 to discard to 2021; 79 including 2022
 
 
 ## 2.3.6 - combine manually checked discards with others, and filter completed.projects to remove all discards ----
@@ -547,10 +622,22 @@ discards[discards %in% keeps]  # none
 
 # remove discards from 'final' file
 completed.projects.second.filter <- completed.projects.first.filter %>%
-  filter(!x_id %in% discards)  # 4788 obs, removing 88
+  filter(!x_id %in% discards)  
+# 4788 obs, removing 88, to 2021; 5007 obs, removing 382, including 2022 (number
+# is so much higher with 2022 because lack of project ids means no projects
+# in the 2022 file have been removed in previous steps based on same project id)
+
+# where 2022 file duplicates project from 2021 file, and the 2022 file project is kept,
+# use addresses from the 2021 file (but not reading them in from the manual checking file,
+# because excel has corrupted street numbers) - note only includes 2022 file addresses
+# where they are duplicates of 2021 file projects; others will remain blank
+completed.projects.2022.addresses <- 
+  add2022addresses(completed.projects.second.filter,
+                   intersecting.groups.flagged,
+                   intersecting.groups.manual.checked)
 
 # write output
-st_write(completed.projects.second.filter %>%
+st_write(completed.projects.2022.addresses %>%
            # remove fields added during duplication removal process
            dplyr::select(-c(x_id, identifier, w_id)), 
          "../GIS/completedProjects.sqlite", delete_layer = TRUE)
@@ -567,7 +654,8 @@ st_write(completed.projects.second.filter %>%
 # Make sure as few R objects are loaded, 
 # and as few other programs running, as possible. If still fails due to memory 
 # shortage, may need to restructure code so that 'roads' and 'stops' aren't
-# loaded at same time - that is, find stop no's first, and then remove 'roads' and find stops.
+# loaded at same time - that is, find stop no's first, and then remove 'roads' 
+#  and find stops. [This all seems less of a problem with OSM roads than Vicmap.]
 
 # Also locates polygon areas within 800m walking distance of PT stops
 
@@ -644,6 +732,7 @@ stops <- bind_rows(train.stops, tram.stops, bus.stops)
 
 ### 2.4.3 find stops within walkable distance ----
 ### -------------------------------------#
+# note - takes about 12 hours; could restructure for parallel processing
 for (i in 1:nrow(completed.projects)) {
 # for (i in 1:nrow(test)) {
 # for (i in 1261:1270) {
@@ -716,7 +805,7 @@ for (i in 1:nrow(completed.projects)) {
   }
 }
 ## Vicmap roads: about 11 to 12 hrs (on new i7 computer, and about 12 to 13 on Asus with linux)
-## OSM: about 10 hours (on new i7 computer)
+## OSM: about 10 hours (on new i7 computer); or 12 hours once 2022 is included
 
 # See note in 'findWalkableStops.R' regarding 'In showSRID(SRS_string, format = "PROJ"...' error message
 
@@ -994,7 +1083,7 @@ plot <- ggplot(data = densities) +
   labs(x = "Type of dwelling",
        y = "Density (dwellings / ha), log scale",
        title = "Density (dwellings / ha) of major redevelopment sites, Melbourne",
-       subtitle = "Projects completed 2004-2021",
+       subtitle = "Projects completed 2004-2022",
        caption = "Data provided by DELWP (Victoria), Urban Development Program
 Categories for attached dwellings: 
 2004-2007: attOneS, TwotoFourSMD, FourSMD; 2008-2016: attOneS, attached2and3storey, FourSMD; 2017-2021: townhouses, apartments
@@ -1052,7 +1141,7 @@ att4s_100plus <- completed.projects %>%
 att4s_pct100plus <- att4s_100plus[att4s_100plus$dens_100plus == "yes", "dwellings"] / 
   sum(att4s_100plus[, "dwellings"]) *
   100
-att4s_pct100plus  # 95.79526
+att4s_pct100plus  # 95.79526 up to 2021; 95.78471 with 2022 included
 
 
 # count apt dwellings that are / are not density 100+
@@ -1066,7 +1155,7 @@ apt_100plus <- completed.projects %>%
 apt_pct100plus <- apt_100plus[apt_100plus$dens_100plus == "yes", "dwellings"] / 
   sum(apt_100plus[, "dwellings"]) *
   100
-apt_pct100plus  # 96.86924
+apt_pct100plus  # 96.86924 up to 2021; 96.83957 with 2022 included
 
 
 # 4.  Identify and calculate numbers of apartments and other high density ----
@@ -1116,3 +1205,50 @@ total.hi_dens.proj <- nrow(completed.projects %>%
                              filter(hi_dens == "yes"))
 total.hi_dens.proj # 3146 total projects with high density dwellings
 
+
+## 4.3 Repeat calculation of numbers of apartments and other high density numbers including 2022 ----
+## -------------------------------------#
+# completed projects, revised to include 2022
+completed.projects <- st_read("../GIS/completedProjects.sqlite")
+
+completed.projects <- completed.projects %>%
+  rowwise() %>%  # required so 'sum' can be used in hi_dens_dwel
+  mutate(dwel_ha = total_dwel / area_ha,
+         
+         hi_dens = case_when(apartments > 0 | att_4s > 0 ~ "yes",
+                             round(dwel_ha, 1) >= 100 ~ "yes", # rounding to avoid floating point exclusions of exactly 100
+                             TRUE ~ "no"),
+         
+         hi_dens_dwel = case_when(apartments > 0 | att_4s > 0 ~ sum(apartments, att_4s, na.rm = TRUE),
+                                  round(dwel_ha, 1) >= 100 ~ total_dwel)) %>%
+  ungroup()
+
+# calculate numbers - note that these may include apartments which are not
+# within walking distance of PT, whereas those apartments are excluded
+# in section 2.1.1 of the calculation of outputs in 'analysis.R'
+
+# dwellings
+total.hi_dens_dwel <- sum(completed.projects$hi_dens_dwel, na.rm = TRUE)
+total.hi_dens_dwel  # 223,709 total high density dwellings
+
+# projects
+total.hi_dens.proj <- nrow(completed.projects %>%
+                             filter(hi_dens == "yes"))
+total.hi_dens.proj # 3293 total projects with high density dwellings
+
+
+# 5. Number of MRS apartments corresponding to BH review period ----
+# -----------------------------------------------------------------------------#
+# Background: checks of DELWP 'broadhectare' files were conducted (see
+# 'BH files downloaded 2013-21.R' and 'BH file downloaded 2022.R', and
+# found only two high density projects in the 'broadhectare' files for the 
+# years 2013 to 2022 located within 800m of the PPTN.  Need to compare this
+# with the number of projects from the 'major redevelopment site' files
+# for the equivalent period)
+
+apartments <- readRDS("./dashboard/apartments.rds")
+
+apt.2013.2022 <- apartments %>%
+  filter(year_comp >= 2013)
+
+nrow(apt.2013.2022)  # 2258

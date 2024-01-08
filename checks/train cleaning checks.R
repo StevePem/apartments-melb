@@ -290,8 +290,15 @@ DOT.stations <- readxl::read_xlsx("../Data/DOT Service Volumes.xlsx",
 
 # GTFS stations missing from DoT
 GTFS.stations[!GTFS.stations %in% DOT.stations]
+
+# Up to 2021 (and probably on an old version of the road network: Flemington Racecourse
+# does not appear in the last version of 'completed.projects' created before updating for 2022;
+# so differences from the 2022 list probably reflect different road network) - 
 # [1] "Bunyip"                "Flemington Racecourse" "Flinders Street"       "Geelong"              
 # [5] "Jolimont-MCG"          "Showgrounds"           "Southern Cross" 
+
+# Including 2022 - 
+# [1] "Flinders Street" "Geelong"         "Jolimont-MCG"    "Showgrounds"     "Southern Cross" 
 
 # Flinders Street, Southern Cross and Jolimont require manual alterations
 # (to one set of data or the other).  Others don't matter.
@@ -299,6 +306,7 @@ GTFS.stations[!GTFS.stations %in% DOT.stations]
 
 # DoT stations not in GTFS
 DOT.stations[!DOT.stations %in% GTFS.stations]
+# Up to 2021 (not necessarily based on the final version of the road network - see note above)-
 # [1] "Albion"                  "Belgrave"                "Berwick"                
 # [4] "Coolaroo"                "Cranbourne"              "Crib Point"             
 # [7] "Diggers Rest"            "Epping"                  "Flinders St City Circle"
@@ -311,13 +319,28 @@ DOT.stations[!DOT.stations %in% GTFS.stations]
 # [28] "Thomastown"              "Upfield"                 "Watsonia"               
 # [31] "Wattle Glen"             "Westona"                 "Grand Total" 
 
+# # Including 2022 - 
+# [1] "Aircraft"                "Albion"                  "Baxter"                 
+# [4] "Beaconsfield"            "Belgrave"                "Coolaroo"               
+# [7] "Cranbourne"              "Crib Point"              "Diggers Rest"           
+# [10] "Flinders St City Circle" "Flinders Street Station" "Hallam"                 
+# [13] "Hawkstowe"               "Hoppers Crossing"        "Hurstbridge"            
+# [16] "Jolimont"                "Kananook"                "Laverton"               
+# [19] "Mernda"                  "Mount Waverley"          "Narre Warren"           
+# [22] "Officer"                 "Sandown Park"            "Seaford"                
+# [25] "Seaholme"                "Southern Cross Station"  "Stony Point"            
+# [28] "Tecoma"                  "Thomastown"              "Upfield"                
+# [31] "Watergardens"            "Watsonia"                "Wattle Glen"            
+# [34] "Westona"                 "Grand Total" 
+
 # Flinders Street, Southern Cross and Jolimont require manual alterations
 # (to one set of data or the other).  Others are likely to be stations with
-# no apartments, so explicable, apart from Epping.
+# no projects, so explicable, apart from Epping [which only appears in the 'up to
+# 2021' list, and was solved by the switch from Vicmap to OSM roads).
 
 # Resolution: 
-# - Epping manually added to the relevant project (R09066) in section 2.4.4 of
-#   'apartments.R'
+# - Initially, Epping manually added to the relevant project (R09066) in section 2.4.4 of
+#   'apartments.R'; but later resolved by switch from Vicmap to OSM roads
 # - GTFS 'Jolimont-MCG' changed to 'Jolimont' in section 2.4.4 of 'apartments.R'
 # - DoT 'Flinders St City Circle', 'Flinders Street Station' and 'Southern Cross
 #   Station' changed to 'Flinders Street' and 'Southern Cross' in section 4.2

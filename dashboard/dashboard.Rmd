@@ -218,7 +218,7 @@ If 'Greater Melbourne' or a Local Government Area is selected, all services of t
 
 'Walkable catchments' shown on the map are:<br>
 •	for Greater Melbourne and Local Government Areas, places within 800m walking distance of the public transport stops that are walkable from the apartments in those areas.<br>
-•	for corridors, places within 800m walking distance of the stations or stops that make up the corridor, where those statons or stops have apartments within their catchments.<br><br>
+•	for corridors, places within 800m walking distance of the stations or stops that make up the corridor, where those stations or stops have apartments within their catchments.<br><br>
    
 'Population' is the population of the walkable catchment. <br><br>
 

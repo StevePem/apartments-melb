@@ -5,7 +5,7 @@ account: apartments-melb
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 9692630
-bundleId: 8118992
+bundleId: 8192620
 url: https://apartments-melb.shinyapps.io/dashboard/
 version: 1
 asMultiple: FALSE

@@ -47,13 +47,13 @@ i <- 40  # route 58 south
 
 if (i == 33) {
   write.csv(tram.monthly.volumes, 
-            "../Appendix/appendix 2/tram monthly volumes route 16.csv", row.names = FALSE)
+            "../Appendix/appendix 4/tram monthly volumes route 16.csv", row.names = FALSE)
 } else if (i == 42) {
   write.csv(tram.monthly.volumes, 
-            "../Appendix/appendix 2/tram monthly volumes route 6 north.csv", row.names = FALSE)
+            "../Appendix/appendix 4/tram monthly volumes route 6 north.csv", row.names = FALSE)
 } else if (i == 40) {
   write.csv(tram.monthly.volumes, 
-            "../Appendix/appendix 2/tram monthly volumes route 58 south.csv", row.names = FALSE)
+            "../Appendix/appendix 4/tram monthly volumes route 58 south.csv", row.names = FALSE)
   
 }
 
@@ -63,29 +63,30 @@ if (i == 33) {
 ## 2.1 Route lengths (in km), data and setup ----
 ## -------------------------------------#
 # read in digitised routes (manually traced from PPTN)
-app.2.routes <- st_read("../Appendix/appendix 2/app 2 routes.sqlite") %>%
+app.4.routes <- st_read("../Appendix/appendix 4/app 4 routes.sqlite",
+                        layer = "app 4 routes") %>%
   # add distance in km
   mutate(length = as.numeric(st_length(.)) / 1000)
 
-route.16.old.length <- app.2.routes %>% filter(route == "16 old") %>% 
+route.16.old.length <- app.4.routes %>% filter(route == "16 old") %>% 
   .$length  # Melb Uni to St Kilda
-route.69.length <- app.2.routes %>% filter(route == "69") %>% 
+route.69.length <- app.4.routes %>% filter(route == "69") %>% 
   .$length  # St Kilda to Kew
-route.16.new.length <- app.2.routes %>% filter(route == "16 new") %>% 
+route.16.new.length <- app.4.routes %>% filter(route == "16 new") %>% 
   .$length  # Melb Uni to Kew
-route.8.old.length <- app.2.routes %>% filter(route == "8 old") %>% 
+route.8.old.length <- app.4.routes %>% filter(route == "8 old") %>% 
   .$length  # Melb Uni to Toorak
-route.22.length <- app.2.routes %>% filter(route == "22") %>% 
+route.22.length <- app.4.routes %>% filter(route == "22") %>% 
   .$length  # Moreland to Arts Precinct
-route.8.new.north.length <- app.2.routes %>% filter(route == "8 new north") %>% 
+route.8.new.north.length <- app.4.routes %>% filter(route == "8 new north") %>% 
   .$length # Moreland to Domain Interchange
-route.8.new.south.length <-  app.2.routes %>% filter(route == "8 new south") %>% 
+route.8.new.south.length <-  app.4.routes %>% filter(route == "8 new south") %>% 
   .$length # Domain Interchange to Toorak
-route.6.north.length <- app.2.routes %>% filter(route == "6 north") %>% 
+route.6.north.length <- app.4.routes %>% filter(route == "6 north") %>% 
   .$length  # Moreland to Domain Interchange
-route.58.south.domain.rd.length <- app.2.routes %>% filter(route == "58 south domain rd") %>% 
+route.58.south.domain.rd.length <- app.4.routes %>% filter(route == "58 south domain rd") %>% 
   .$length # Domain Interchange to Toorak via Domain Rd
-route.58.south.toorak.rd.length <- app.2.routes %>% filter(route == "58 south toorak rd") %>% 
+route.58.south.toorak.rd.length <- app.4.routes %>% filter(route == "58 south toorak rd") %>% 
   .$length # Domain Interchange to Toorak via Toorak Rd
 
 # load data as for dashboard
@@ -139,7 +140,7 @@ tramAnnualTotals <- function(tram.monthly.volumes) {
 ## 2.3 Route 16 ----
 ## -------------------------------------#
 # update route 16 for distances
-route.16.services <- read.csv("../Appendix/appendix 2/tram monthly volumes route 16.csv")
+route.16.services <- read.csv("../Appendix/appendix 4/tram monthly volumes route 16.csv")
 
 # start with copy of services, then multiply months by relevant distances (where not zero)
 route.16.distances <- route.16.services
@@ -169,14 +170,14 @@ data.16 <- all.data %>%
 
 # create and save plot
 plot.16 <- appendixPlot(data.16)
-suppressWarnings(orca(plot.16, "../Appendix/appendix 2/Route 16.svg",
+suppressWarnings(orca(plot.16, "../Appendix/appendix 4/Route 16.svg",
                       width = 14.5 * px_cm, height = 14.5 * px_cm))
 
 
 ## 2.4 Route 6 north ----
 ## -------------------------------------#
 # update route 6 north for distances
-route.6n.services <- read.csv("../Appendix/appendix 2/tram monthly volumes route 6 north.csv")
+route.6n.services <- read.csv("../Appendix/appendix 4/tram monthly volumes route 6 north.csv")
 
 # start with copy of services, then multiply months by relevant distances (where not zero)
 route.6n.distances <- route.6n.services
@@ -206,14 +207,14 @@ data.6n <- all.data %>%
 
 # create and save plot
 plot.6n <- appendixPlot(data.6n)
-suppressWarnings(orca(plot.6n, "../Appendix/appendix 2/Route 6 north.svg",
+suppressWarnings(orca(plot.6n, "../Appendix/appendix 4/Route 6 north.svg",
                       width = 14.5 * px_cm, height = 14.5 * px_cm))
 
 
 ## 2.5 Route 58 south ----
 ## -------------------------------------#
-# update route 6 north for distances
-route.58s.services <- read.csv("../Appendix/appendix 2/tram monthly volumes route 58 south.csv")
+# update route 58 south for distances
+route.58s.services <- read.csv("../Appendix/appendix 4/tram monthly volumes route 58 south.csv")
 
 # start with copy of services, then multiply months by relevant distances (where not zero)
 route.58s.distances <- route.58s.services
@@ -247,6 +248,6 @@ data.58s <- all.data %>%
 
 # create and save plot
 plot.58s <- appendixPlot(data.58s)
-suppressWarnings(orca(plot.58s, "../Appendix/appendix 2/Route 58 south.svg",
+suppressWarnings(orca(plot.58s, "../Appendix/appendix 4/Route 58 south.svg",
                       width = 14.5 * px_cm, height = 14.5 * px_cm))
 

@@ -86,7 +86,7 @@ appendixPlot <- function(filtered_data) {
               type = "scatter", mode = "lines+markers",
               marker = list(color = "#FF7F00", size = 12),
               line = list(color = "#FF7F00", width = 4),
-              name = "Annual services"  # Legend label
+              name = "Annual public transport services"  # Legend label
     )
   
   p <- p %>%
@@ -98,7 +98,7 @@ appendixPlot <- function(filtered_data) {
               type = "scatter", mode = "lines+markers",
               marker = list(color = "#33A02C", size = 6),
               line = list(color = "#33A02C", width = 2),
-              name = "Annual services, capacity adjusted"  # Legend label
+              name = "Annual public transport services, capacity adjusted"  # Legend label
     )
   
   

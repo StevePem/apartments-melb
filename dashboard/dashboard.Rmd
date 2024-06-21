@@ -894,26 +894,38 @@ renderLeaflet({
   }
   
   # 'apartments' section of legend
+  if (input$years[1] == input$years[2]) {
+    apt_string <- paste0("New apartments ", input$years[1])
+  } else {
+    apt_string <- paste0("New apartments ", input$years[1], "-", input$years[2])
+  }
   html_legend <- paste0(
     html_legend, '
       <div class="legend-item">
         <div class="legend-symbol-container">
           <div class="legend-symbol-point apartments-symbol"></div>
-        </div>
-        Apartments ', input$years[1], ' to ', input$years[2], ' 
-      </div>
+        </div>',
+        apt_string,  
+      '</div>
   ', sep = "")
   
-  # 'other apartments' section of legend
+  # 'other apartments' section of legend, where not full span of years
+  if (input$years[1] > 2004 & input$years[2] == 2022) {
+    other_apt_string <- paste0("New apartments 2004-", input$years[1] - 1)
+  } else if (input$years[1] == 2004 & input$years[2] < 2022) {
+    other_apt_string <- paste0("New apartments ", input$years[2] + 1, "-2022")
+  } else if (input$years[1] > 2004 & input$years[2] < 2022) {
+    other_apt_string <- paste0("New apartments 2004-", input$years[1] - 1, " & ", input$years[2] + 1, "-2022")
+  }
   if (input$years[1] > 2004 | input$years[2] < 2022) {
     html_legend <- paste0(
       html_legend, '
         <div class="legend-item">
           <div class="legend-symbol-container">
             <div class="legend-symbol-point other-apartments-symbol"></div>
-          </div>
-          Other apartments 
-        </div>
+          </div>',
+          other_apt_string,
+        '</div>
     ', sep = "")
   }
   

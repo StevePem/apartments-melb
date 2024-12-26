@@ -31,7 +31,7 @@ indicators <- function() {
   # 
   for (i in seq_along(cities)) {
   # for (i in 19:20) {
-    
+
     city <- cities[i]
     print(paste(Sys.time(), "| Beginning processing for", city))
     
@@ -527,11 +527,11 @@ indicators <- function() {
                 no_tram = 0,
                 no_ferry = 0,
                 no_bus = 0)  # to be supplemented below, with  manual results
-        
+
         outputs <- bind_rows(outputs, output.row)
         
       }
-      
+
       ### 4.5.3 save stop locations for manual processing ----
       
       write.csv(pn.stops, "../Tables/Palmerston North development bus stops.csv")

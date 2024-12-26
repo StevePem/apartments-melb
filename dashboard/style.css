@@ -1,0 +1,37 @@
+/* set logo height (reducing the logo size to 60px) */
+
+.navbar-logo {
+  height: 60px;
+}
+
+
+/* set navbar element height and padding (default theme is 50 height & 14.5 top/bottom padding */
+@media (min-width: 1264px) {
+  .navbar-brand {
+    height: 60px;
+    padding: 19.5px 15px;
+  }
+}
+
+@media (min-width: 1383px) {
+  .navbar-nav > li > a {
+    height: 60px;
+    padding-top: 19.5px;
+    padding-bottom: 19.5px;
+  }
+}
+
+@media (max-width: 1264px) {
+  .navbar-brand {
+    height: 30px;
+    padding: 4.5px 15px;
+  }
+}
+
+@media (max-width: 1383px) {
+  .navbar-nav > li > a {
+    height: 30px;
+    padding-top: 4.5px;
+    padding-bottom: 4.5px;
+  }
+}

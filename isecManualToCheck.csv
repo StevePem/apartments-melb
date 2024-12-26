@@ -1,0 +1,269 @@
+project_id,status,year_comp,area_ha,proj_name,proj_part,street_num,street_name,street_type,add_misc,suburb,detached,townhouses,apartments,unknown,att_1s,att_2_3s,att_4s,total_dwel,max_storeys,lga,region,file_year,x_id,identifier,w_id,group_id,isec_area_ha,flag,isec_pct
+R022,Completed,2004,1.22,NA,None,"77, 105, 111",Mountain,Highway,NA,WANTIRNA,20,NA,NA,0,0,0,0,20,NA,Knox,East,2004,2,"77, 105, 111 mountain",2,7,1.055213101,further checking,86.63875503
+R05467,Completed,2005,2.25,NA,None,"77, 105, 111",Mountain,Highway,NA,Wantirna,0,NA,NA,0,60,20,0,80,NA,Knox,East,2006,346,"77, 105, 111 mountain",247,7,1.055213101,further checking,46.93698435
+R00460,Completed,2005,0.07,Former Bonello Motors site,None,459,Macauley,Road,NA,Kensington,0,NA,NA,0,0,0,33,33,NA,Melbourne,Inner,2006,366,459 macauley,267,10,0.035893414,further checking,50.17051114
+R00511,Completed,2007,0.14,Macaulay Road,None,461-469,Macaulay,Road,NA,Kensington,0,NA,NA,0,0,40,0,40,NA,Melbourne,Inner,2007,480,461-469 macaulay,381,10,0.035893414,further checking,24.85963616
+R00711,Completed,2006,0.03,NA,None,408-426,Lygon,Street,NA,Brunswick East,0,NA,NA,0,0,0,64,64,NA,Moreland,North,2006,383,408-426 lygon,284,11,0.031045006,further checking,99.49582693
+R00543,Completed,2007,0.22,Former Burlon Hosiery site,None,408-426,Lygon,Street,NA,Brunswick East,0,NA,NA,0,0,0,59,59,NA,Moreland,North,2007,484,408-426 lygon,385,11,0.031045006,further checking,14.21354861
+R00135,Completed,2004,0.26,Wills Tower,None,22-30,Wills,Street,NA,Melbourne,0,NA,NA,0,0,0,138,138,NA,Melbourne,Inner,2005,222,22-30 wills,123,13,0.000176399,further checking,0.068660792
+R07856,Completed,2008,0,WILLS STREET development,NA,22-30,Wills,Street,NA,Melbourne,0,NA,NA,0,0,0,138,138,NA,Melbourne,Inner,2008,547,22-30 wills,448,13,0.000176399,further checking,100
+R00135,Completed,2004,0.26,Wills Tower,None,22-30,Wills,Street,NA,Melbourne,0,NA,NA,0,0,0,138,138,NA,Melbourne,Inner,2005,222,22-30 wills,123,14,0.000175909,further checking,0.068470189
+R07857,Completed,2008,0,WILLS STREET development,NA,22-30,Wills,Street,NA,Melbourne,0,NA,NA,0,0,0,138,138,NA,Melbourne,Inner,2008,548,22-30 wills,449,14,0.000175909,further checking,100
+R07879,Completed,2008,0.01,ABBOTSFORD STREET development,NA,187-201,Abbotsford,Street,NA,North Melbourne,0,NA,NA,0,0,17,0,17,NA,Melbourne,Inner,2008,549,187-201 abbotsford,450,15,0.008695585,further checking,96.29198497
+R03228,Completed,2007,0.17,Former Engine House,NA,187-201,Abbotsford,Street,NA,North Melbourne,0,NA,NA,0,2,17,0,19,NA,Melbourne,Inner,2010,693,187-201 abbotsford,594,15,0.008695585,further checking,5.013711777
+R00547,Completed,2005,0.52,Watergate,None,NA,Bourke,Street,NA,Docklands,0,NA,NA,0,0,0,339,339,NA,Melbourne,Inner,2006,372,NA bourke,273,17,0.524564276,further checking,99.96009049
+R07883,Completed,2008,0.78,BOURKE STREET development,NA,757,Bourke,Street,NA,Docklands,0,NA,NA,0,0,0,73,73,NA,Melbourne,Inner,2010,1059,757 bourke,960,17,0.524564276,further checking,67.2961046
+R00855,Completed,2004,0.1,University City Apartments,None,399-401,Little Lonsdale,Street,NA,Melbourne,0,NA,NA,0,0,0,220,220,NA,Melbourne,Inner,2005,241,399-401 little lonsdale,142,19,0.103876792,further checking,99.44521015
+R07919,Completed,2008,0.19,University City Apartments,NA,399-401,Little Lonsdale,Street,NA,Melbourne,0,NA,NA,214,0,0,0,214,NA,Melbourne,Inner,2010,1066,399-401 little lonsdale,967,19,0.103876792,further checking,54.92931434
+R05307,Completed,2005,0.06,Stanley Street Units,None,61-63,Stanley,Street,NA,West Melbourne,0,NA,NA,13,0,0,0,13,NA,Melbourne,Inner,2005,336,61-63 stanley,237,23,0.055011752,further checking,99.73278726
+R07968,Completed,2008,0.06,NA,NA,61-63,Stanely street,Road,NA,West Melbourne,0,NA,NA,13,0,0,0,13,NA,Melbourne,Inner,2010,1072,61-63 stanely street,973,23,0.055011752,further checking,99.93907471
+R07850,Completed,2008,0.1,MARKET STREET development,NA,54-60,Market,Street,NA,Melbourne,0,NA,NA,0,0,0,37,37,NA,Melbourne,Inner,2008,546,54-60 market,447,25,0.10209915,further checking,99.51771016
+R00142,Completed,2009,0.1,Pacific International,NA,54-62,Market,Street,NA,Melbourne,0,NA,NA,0,0,0,354,354,NA,Melbourne,Inner,2011,1097,54-62 market,998,25,0.10209915,further checking,99.92510318
+R0732,Completed,2004,1.55,Sovereign Point,None,31 - 47,Williamsons,Road,NA,DONCASTER,0,NA,NA,0,0,112,0,112,NA,Manningham,East,2004,25,31 - 47 williamsons,7,26,0.569545279,further checking,36.73484243
+R07050,Completed,2009,0.87,Sovereign Point Apartments E & F,NA,31-47,Williamsons,Road,NA,Doncaster,0,NA,NA,0,0,16,0,16,NA,Manningham,East,2011,1400,31-47 williamsons,1301,26,0.569545279,further checking,65.72362508
+R03454,Completed,2005,0.13,NA,None,587,Dandenong,Road,NA,Armadale,0,NA,NA,0,0,21,0,21,NA,Stonnington,East,2006,403,587 dandenong,304,27,0.127973514,further checking,99.97182553
+R07234,Completed,2008,0.13,Dandenong Road Apartments,NA,26,Valentine,Grove,NA,Armadale,0,NA,NA,0,0,21,0,21,NA,Stonnington,East,2011,1422,26 valentine,1323,27,0.127973514,further checking,99.91808465
+R0833,Completed,2004,0.61,NA,None,Lot 2,Urquhart,Street,NA,COBURG,0,NA,NA,0,0,32,0,32,NA,Moreland,North,2004,132,Lot 2 urquhart,58,28,0.112447102,further checking,18.26929689
+R07651,Completed,2009,0.11,Pentridge Boulevard Urquhart St Dwellings / Office,NA,Urquhart,Urquhart,Street,NA,Coburg,0,NA,NA,0,0,31,0,31,NA,Moreland,North,2011,1472,Urquhart urquhart,1373,28,0.112447102,further checking,99.97908679
+R03554,Completed,2004,0.16,Capitol Building,None,115,Swanston,Street,NA,Melbourne,0,NA,NA,61,0,0,0,61,NA,Melbourne,Inner,2005,316,115 swanston,217,29,0.155895864,further checking,98.78579173
+R07875,Completed,2008,0.16,SPENCER STREET development,NA,109-117,Spencer,Street,NA,Melbourne,0,NA,NA,0,0,0,61,61,NA,Melbourne,Inner,2011,1486,109-117 spencer,1387,29,0.155895864,further checking,97.74923031
+R03536,Completed,2004,0.29,Vue Apartments,None,235-275,Smithfield,Road,NA,Kensington,0,NA,NA,0,0,0,176,176,NA,Melbourne,Inner,2005,312,235-275 smithfield,213,30,0.285600453,further checking,99.60659074
+R07884,Completed,2008,0.29,SMITHFIELD  STOC ROAD development,NA,235-275,Smithfield  Stoc,Road,NA,Kensington,0,NA,NA,0,0,0,40,40,NA,Melbourne,Inner,2011,1488,235-275 smithfield  stoc,1389,30,0.285600453,further checking,99.29946126
+R05276,Completed,2005,0.03,Lygon Street Student Accommodation,None,98-100,Lygon,Street,NA,Carlton,0,NA,NA,14,0,0,0,14,NA,Melbourne,Inner,2005,328,98-100 lygon,229,31,0.028213454,further checking,99.69354118
+R07918,Completed,2008,0.32,NA,NA,98-100,Lygon,Street,NA,Carlton,0,NA,NA,16,0,0,0,16,NA,Melbourne,Inner,2011,1493,98-100 lygon,1394,31,0.028213454,further checking,8.696103176
+R00267,Completed,2004,0.04,Avanti Apartments,None,117,Bouverie,Street,NA,Carlton,0,NA,NA,0,0,0,39,39,NA,Melbourne,Inner,2005,227,117 bouverie,128,32,0.040709395,further checking,98.95293208
+R07928,Completed,2008,0.04,Avanti Apartments,NA,117-121,BOUVERIE,Street,NA,Carlton,0,NA,NA,39,0,0,0,39,NA,Melbourne,Inner,2011,1497,117-121 bouverie,1398,32,0.040709395,further checking,99.91306492
+R00418,Completed,2006,17.98,Commonwealth Games Village,NA,944-1000,"Park [Oak, Tullamarine, Gibson]",Street,NA,Parkville,168,NA,NA,0,0,650,0,818,NA,Melbourne,Inner,2008,542,"944-1000 park [oak, tullamarine, gibson]",443,34,0.144649874,further checking,0.804327885
+R08594,Completed,2010,0.14,NA,NA,29-41,Parkville,Avenue,NA,Parkville,0,NA,NA,15,0,0,0,15,NA,Melbourne,Inner,2011,1530,29-41 parkville,1431,34,0.144649874,further checking,100
+R0796,Completed,2004,4.39,Gas & Fuel site,None,36-58,Macaulay,Road,NA,NORTH MELBOURNE,0,NA,NA,0,0,0,260,260,NA,Melbourne,Inner,2004,65,36-58 macaulay,15,35,0.311279367,further checking,7.078225792
+R06690,Completed,2011,0.31,Apartments,NA,60-96,Macaulay,STREET,NA,North Melbourne,0,NA,NA,0,0,0,75,75,NA,Melbourne,Inner,2012,1604,60-96 macaulay,1505,35,0.311279367,further checking,99.45114944
+R03618,Completed,2004,0.34,NA,None,1088-1096,Whitehorse,Road,NA,BOX HILL,0,NA,NA,40,0,0,0,40,NA,Whitehorse,East,2004,186,1088-1096 whitehorse,87,36,0.335327622,further checking,99.86540621
+R07159,Completed,2011,0.34,Whitehorse Road Apartments,NA,1088-1090,Whitehorse,ROAD,NA,Box Hill,0,NA,NA,0,0,39,0,39,NA,Whitehorse,East,2012,1616,1088-1090 whitehorse,1517,36,0.335327622,further checking,99.86540578
+R00418,Completed,2006,17.98,Commonwealth Games Village,NA,944-1000,"Park [Oak, Tullamarine, Gibson]",Street,NA,Parkville,168,NA,NA,0,0,650,0,818,NA,Melbourne,Inner,2008,542,"944-1000 park [oak, tullamarine, gibson]",443,37,0.889792823,further checking,4.947706878
+R08592,Completed,2011,0.9,NA,NA,52-62,Cade,WAY,NA,Parkville,0,NA,NA,0,0,0,996,996,NA,Melbourne,Inner,2012,1695,52-62 cade,1596,37,0.889792823,further checking,99.29797356
+R06332,Completed,2009,0.21,Marshall Street Dwellings,NA,100-102,Marshall,Street,NA,Ivanhoe,0,NA,NA,0,16,0,0,16,NA,Banyule,North,2010,886,100-102 marshall,787,39,0.028234106,further checking,13.48361614
+R11148,Completed,2012,0.03,NA,NA,100-102,Marshall,St,NA,Ivanhoe,0,NA,NA,0,16,0,0,16,NA,Banyule,North,2013,1854,100-102 marshall,1755,39,0.028234106,further checking,99.75344271
+R00229,Completed,2005,0.26,Para Road Units,None,265-269,Para,Road,NA,Greensborough,0,NA,NA,0,0,36,0,36,NA,Banyule,North,2007,457,265-269 para,358,40,0.246387287,further checking,94.16068451
+R11169,Completed,2012,0.25,NA,NA,265,Para,Rd,NA,Greensborough,0,NA,NA,36,0,0,0,36,NA,Banyule,North,2013,1856,265 para,1757,40,0.246387287,further checking,99.96550776
+R01023,Completed,2007,0.63,Waterford Green - Stage 8,None,48,Wests,Road,NA,Maribyrnong,0,NA,NA,0,0,67,0,67,NA,Maribyrnong,West,2007,492,48 wests,393,47,0.630763314,further checking,99.99379742
+R11279,Completed,2012,0.95,Waterford Green Ne,NA,Aug-60,Wests,Rd,NA,Maribyrnong,0,NA,NA,0,0,0,67,67,NA,Maribyrnong,West,2013,1870,8-60 wests,1771,47,0.630763314,further checking,66.6100647
+R05765,Completed,2008,0.18,Churchill Avenue Apartments,NA,15-19,Churchill,Avenue,NA,Maidstone,0,NA,NA,20,0,0,0,20,NA,Maribyrnong,West,2010,877,15-19 churchill,778,48,0.183498526,further checking,99.94122565
+R11282,Completed,2012,0.18,Yarra Community Housing,NA,28,Rooney,St,NA,Maidstone,0,NA,NA,0,0,20,0,20,NA,Maribyrnong,West,2013,1873,28 rooney,1774,48,0.183498526,further checking,99.82054772
+R05484,Completed,2008,0.78,Berry Street Multi Use,NA,Nov-19,Berry,Street,NA,Yarraville,0,NA,NA,0,0,48,0,48,NA,Maribyrnong,West,2010,823,11-19 berry,724,51,0.70525238,further checking,90.39938334
+R11285,Completed,2012,1.21,Berry Street Vu Site,NA,Nov-19,Berry,St,NA,Yarraville,0,NA,NA,0,0,46,0,46,NA,Maribyrnong,West,2013,1876,11-19 berry,1777,51,0.70525238,further checking,58.37556463
+R00693,Completed,2008,0.18,Uni City Apartments,NA,198-200,Ballarat,Road,NA,Footscray,0,NA,NA,0,0,0,117,117,NA,Maribyrnong,West,2010,651,198-200 ballarat,552,53,0.116197323,further checking,64.48957252
+R11287,Completed,2012,0.12,Unicity Apartments,NA,200,Ballarat,Rd,NA,Footscray,0,NA,NA,0,0,0,117,117,NA,Maribyrnong,West,2013,1878,200 ballarat,1779,53,0.116197323,further checking,99.42005579
+R03409,Completed,2011,1.23,Buncle Street Apartments,NA,52-76,Buncle,STREET,NA,North Melbourne,0,NA,NA,20,0,0,234,254,NA,Moonee Valley,West,2011,1167,52-76 buncle,1068,55,0.59488486,further checking,48.31073143
+R11381,Completed,2012,0.6,Buncle Street Development,NA,32A,Mark,St,NA,North Melbourne,0,NA,NA,0,0,77,0,77,NA,Melbourne,Inner,2013,1936,32A mark,1837,55,0.59488486,further checking,99.93536117
+R00418,Completed,2006,17.98,Commonwealth Games Village,NA,944-1000,"Park [Oak, Tullamarine, Gibson]",Street,NA,Parkville,168,NA,NA,0,0,650,0,818,NA,Melbourne,Inner,2008,542,"944-1000 park [oak, tullamarine, gibson]",443,56,0.143815615,further checking,0.799688972
+R11445,Completed,2012,0.27,Ville Apartments (phase 1),NA,78-84,Cade,Wy,NA,Parkville,0,NA,NA,0,0,49,0,49,NA,Melbourne,Inner,2013,1948,78-84 cade,1849,56,0.143815615,further checking,53.99712004
+R10326,Completed,2011,0.11,NA,NA,367-369,BURWOOD,ROAD,NA,Hawthorn,0,NA,NA,0,0,0,194,194,NA,Boroondara,East,2012,1720,367-369 burwood,1621,57,0.105785799,further checking,100
+R10315,Completed,2013,0.11,Vivida Student Apartments,NA,2-Aug,Beavis,Street,NA,Hawthorn,0,NA,NA,0,0,0,194,194,NA,Boroondara,East,2014,2020,2-8 beavis,1921,57,0.105785799,further checking,100
+R03361,Completed,2004,12.36,Edgewater Estate,Stage 1,NA,Gordon,Street,NA,Maribyrnong,0,NA,NA,150,0,0,0,150,NA,Maribyrnong,West,2005,304,NA gordon,205,58,9.270462668,further checking,74.98957242
+R08918,Completed,2013,11.39,Edgewater Estate B1,NA,NA,Edgewater,Boulevard,NA,Maribyrnong,0,NA,NA,0,0,177,0,177,NA,Maribyrnong,Inner,2014,2068,NA edgewater,1969,58,9.270462668,further checking,81.33827467
+R03613,Completed,2007,2.18,Edgewater Estate,None,NA,Gordon,Street,NA,Maribyrnong,22,NA,NA,0,18,0,0,40,NA,Maribyrnong,West,2007,520,NA gordon,421,59,1.586802809,further checking,72.84894087
+R10991,Completed,2013,1.59,Edgewater Estate E,NA,NA,Sunset,Pl,NA,Maribyrnong,40,NA,NA,0,0,0,0,40,NA,Maribyrnong,Inner,2014,2070,NA sunset,1971,59,1.586802809,further checking,99.98951214
+R00418,Completed,2006,17.98,Commonwealth Games Village,NA,944-1000,"Park [Oak, Tullamarine, Gibson]",Street,NA,Parkville,168,NA,NA,0,0,650,0,818,NA,Melbourne,Inner,2008,542,"944-1000 park [oak, tullamarine, gibson]",443,60,0.260205373,further checking,1.446876038
+R12667,Completed,2013,0.44,Ville Apartments - Stage 3,NA,92-114,Cade,WY,NA,Parkville,0,NA,NA,0,0,0,58,58,NA,Melbourne,Inner,2014,2131,92-114 cade,2032,60,0.260205373,further checking,58.91029499
+R03154,Completed,2007,1.95,Woodlands Park Retirement Village,NA,72,Kangan,Drive,NA,Berwick,0,NA,NA,0,50,0,0,50,NA,Casey,South,2010,682,72 kangan,583,62,1.944264577,further checking,99.88528727
+R07207,Completed,2013,10.78,Woodlands Park Retirement Village,NA,72,Kangan,Drive,NA,Berwick,0,NA,NA,0,150,0,0,150,NA,Casey,South,2014,2192,72 kangan,2093,62,1.944264577,further checking,18.03139292
+R07206,Completed,2009,2.97,Woodlands Park Retirement Village,NA,72,Kangan,Drive,NA,Berwick,100,NA,NA,0,0,0,0,100,NA,Casey,South,2011,1417,72 kangan,1318,63,2.90816036,further checking,97.99624703
+R07207,Completed,2013,10.78,Woodlands Park Retirement Village,NA,72,Kangan,Drive,NA,Berwick,0,NA,NA,0,150,0,0,150,NA,Casey,South,2014,2192,72 kangan,2093,63,2.90816036,further checking,26.97070283
+R00540,Completed,2013,3.34,Nylex Site,NA,25,Nepean,Street,NA,Mentone,0,NA,NA,0,0,119,0,119,NA,Kingston,South,2014,2223,25 nepean,2124,64,3.292804337,further checking,98.49564599
+R10961,Completed,2013,3.3,Aquilo Residential Townhouses Remaining Stage 1,NA,34-94,Oak,Avenue,NA,Mentone,0,NA,NA,0,0,119,0,119,NA,Kingston,South,2014,2224,34-94 oak,2125,64,3.292804337,further checking,99.87347755
+R08138,Completed,2012,0.14,Railway Road Dwellings,NA,17,Railway,Road,NA,Blackburn,0,NA,NA,0,0,13,0,13,NA,Whitehorse,East,2013,1757,17 railway,1658,65,0.13207808,further checking,96.55714714
+R11061,Completed,2013,0.14,Railway Parade Apartment Building,NA,15,Railway,Road,NA,Blackburn,0,NA,NA,0,0,13,0,13,NA,Whitehorse,East,2014,2242,15 railway,2143,65,0.13207808,further checking,95.90694943
+R00685,Completed,2012,5.75,Jmc Site,NA,17-25,Hampstead,Road,NA,Maidstone,0,NA,NA,317,0,0,0,317,NA,Maribyrnong,West,2013,2011,17-25 hampstead,1912,66,1.900557477,further checking,33.04933964
+R10429,Completed,2014,1.9,Jmc Site Precinct 2,NA,17-25,Hampstead,RD,NA,Maidstone,0,NA,NA,0,0,131,0,131,NA,Maribyrnong,Inner,2015,2321,17-25 hampstead,2222,66,1.900557477,further checking,99.9956911
+R03550,Completed,2004,0.17,NA,None,233-239,Collins,Street,NA,MELBOURNE,0,NA,NA,155,0,0,0,155,NA,Melbourne,Inner,2004,174,233-239 collins,79,67,0.166831259,further checking,99.47967088
+R11361,Completed,2014,0.17,NA,NA,233-239,Collins,ST,NA,Melbourne,0,NA,NA,0,0,0,36,36,NA,Melbourne,Inner,2015,2359,233-239 collins,2260,67,0.166831259,further checking,99.42868446
+R03298,Completed,2006,0.18,Boundary Road,None,185-187,Boundary,Road,NA,North Melbourne,0,NA,NA,0,0,0,52,52,NA,Moonee Valley,West,2006,400,185-187 boundary,301,68,0.158218918,further checking,89.48437432
+R10431,Completed,2014,0.16,Serra Apartments,NA,183-187,Boundary,RD,NA,North Melbourne,0,NA,NA,0,0,54,0,54,NA,Melbourne,Inner,2015,2379,183-187 boundary,2280,68,0.158218918,further checking,100
+R00418,Completed,2006,17.98,Commonwealth Games Village,NA,944-1000,"Park [Oak, Tullamarine, Gibson]",Street,NA,Parkville,168,NA,NA,0,0,650,0,818,NA,Melbourne,Inner,2008,542,"944-1000 park [oak, tullamarine, gibson]",443,69,0.183288166,further checking,1.01917671
+R11384,Completed,2014,0.32,Ville Apartments (phase 2),NA,86-90,Cade,WAY,NA,Parkville,0,NA,NA,0,0,51,0,51,NA,Melbourne,Inner,2015,2381,86-90 cade,2282,69,0.183288166,further checking,56.40349755
+R07984,Completed,2010,1.4,NA,NA,5,Centre,Road,NA,Brighton East,0,NA,NA,0,0,24,0,24,NA,Bayside,South,2011,1500,5 centre,1401,70,1.399608009,further checking,100
+R11516,Completed,2014,1.63,Mayflower Retirement Community,NA,7,Centre,ROAD,NA,Brighton East,0,NA,NA,0,0,35,0,35,NA,Bayside,South,2015,2426,7 centre,2327,70,1.399608009,further checking,85.56403947
+R01083,Completed,2008,5.83,Rusden Place Apartments,NA,662-678,Blackburn,Road,NA,Notting Hill,0,NA,NA,0,0,320,0,320,NA,Monash,East,2010,667,662-678 blackburn,568,71,0.546100507,further checking,9.363313806
+R13263,Completed,2014,0.55,Normanby Road Townhouses,NA,215,Normanby,Road,NA,Notting Hill,0,NA,NA,0,0,66,0,66,NA,Monash,East,2015,2473,215 normanby,2374,71,0.546100507,further checking,100
+R07261,Completed,2009,0.47,NA,NA,738-740,Station,Street,NA,Box Hill,0,NA,NA,0,0,73,0,73,NA,Whitehorse,East,2011,1433,738-740 station,1334,72,0.10320192,further checking,21.8053267
+R10657,Completed,2015,0.1,Station Street Apartment Building,NA,746/748,Station,Street,NA,Box Hill,0,NA,NA,0,0,0,25,25,NA,Whitehorse,East,2016,2528,746/748 station,2429,72,0.10320192,further checking,100
+R05606,Completed,2011,11.53,Janefield,NA,NA,Plenty,ROAD,NA,Bundoora,0,NA,NA,0,0,449,0,449,NA,Whittlesea,North,2012,1585,NA plenty,1486,73,9.66838274,further checking,83.84233934
+R05607,Completed,2016,37.94,Janefield,NA,NA,Plenty,Road,NA,Bundoora,399,NA,NA,0,0,0,0,399,NA,Whittlesea,North,2016,2593,NA plenty,2494,73,9.66838274,further checking,25.47115991
+R10170,Completed,2013,0.55,Olive York Way Dwellings,NA,8-Dec,Olive York,Way,NA,Brunswick West,0,NA,NA,0,150,0,0,150,NA,Moreland,North,2014,2170,8-12 olive york,2071,74,0.549860977,further checking,100
+R10171,Completed,2015,0.55,Olive York Way Mixed Use Development,NA,2-Jun,Olive York,Way,NA,Brunswick West,0,NA,NA,0,0,0,147,147,NA,Moreland,North,2016,2616,2-6 olive york,2517,74,0.549860977,further checking,100
+R03490,Completed,2004,0.47,Red Cross Site,None,Jan-25,Balston,Street,NA,Southbank,0,NA,NA,0,0,0,277,277,NA,Melbourne,Inner,2005,310,1-25 balston,211,76,0.228607575,further checking,49.04450713
+R08618,Completed,2015,0.23,Epic (south Tower),NA,110-120,Kavanagh,Street,NA,Southbank,0,NA,NA,0,0,0,382,382,NA,Melbourne,Inner,2016,2698,110-120 kavanagh,2599,76,0.228607575,further checking,99.60215529
+R0732,Completed,2004,1.55,Sovereign Point,None,31 - 47,Williamsons,Road,NA,DONCASTER,0,NA,NA,0,0,112,0,112,NA,Manningham,East,2004,25,31 - 47 williamsons,7,77,0.295787656,further checking,19.07787377
+R07050,Completed,2009,0.87,Sovereign Point Apartments E & F,NA,31-47,Williamsons,Road,NA,Doncaster,0,NA,NA,0,0,16,0,16,NA,Manningham,East,2011,1400,31-47 williamsons,1301,77,0.295787656,further checking,34.1329087
+R11219,Completed,2016,0.29628515,Imperial Doncaster,NA,5,Sovereign Point,Road,NA,Doncaster,0,0,69,0,NA,NA,NA,69,10,Manningham,Eastern Region,2017,2714,5 sovereign point,2615,77,0.295787656,further checking,99.83209064
+R07261,Completed,2009,0.47,NA,NA,738-740,Station,Street,NA,Box Hill,0,NA,NA,0,0,73,0,73,NA,Whitehorse,East,2011,1433,738-740 station,1334,78,0.146537313,further checking,30.96157515
+R12509,Completed,2016,0.14653732,Station Street Apartments,NA,740,Station,Road,NA,Box Hill,0,0,47,0,NA,NA,NA,47,4,Whitehorse,Eastern Region,2017,2743,740 station,2644,78,0.146537313,further checking,100
+R00644,Completed,2008,3.97,NA,NA,502-514,Burwood,Highway,NA,Vermont South,0,NA,NA,0,200,0,0,200,NA,Whitehorse,East,2010,646,502-514 burwood,547,79,3.65671618,further checking,92.13340476
+R10962,Completed,2016,3.65868473,Victoria Grange Retirement Village,NA,502-514,Burwood,Highway,NA,Vermont South,0,72,0,0,NA,NA,NA,72,2,Whitehorse,Eastern Region,2017,2749,502-514 burwood,2650,79,3.65671618,further checking,99.94619404
+R00741,Completed,2007,7.42,Mingarra Retirement Village,NA,77-115,Mount Dandenong,Road,NA,Croydon,60,NA,NA,0,0,0,0,60,NA,Maroondah,East,2010,655,77-115 mount dandenong,556,82,1.994477711,further checking,26.88334309
+R15360,Completed,2016,1.99502683, ,NA,77-117,Mt Dandenong,Road, ,Croydon,0,36,0,0,NA,NA,NA,36,1,Maroondah,Eastern Region,2017,2806,77-117 mt dandenong,2707,82,1.994477711,further checking,99.97247417
+R01118,Completed,2010,6.7,Sunshine Golf Course Redevelopment,NA,130,Fitzgerald,Road,NA,Sunshine West,115,NA,NA,0,0,0,0,115,NA,Brimbank,West,2011,1142,130 fitzgerald,1043,83,6.670428847,further checking,99.58536414
+R07084,Completed,2016,37.34634781,5379 Callaway Park,NA,130,Fitzgerald,Road,NA,Sunshine West,300,400,0,0,NA,NA,NA,700,2,Brimbank,Western Region,2017,2841,130 fitzgerald,2742,83,6.670428847,further checking,17.86099364
+R07667,Completed,2011,0.13,Point Nepean Road Residential Development,NA,1587,Point Nepean,ROAD,NA,Rosebud West,0,NA,NA,0,0,28,0,28,NA,Mornington Peninsula,South,2012,1734,1587 point nepean,1635,84,0.128433127,further checking,99.97282656
+R15484,Completed,2016,0.2698743, ,NA,1587,Point Nepean,Road, ,Rosebud West,0,0,27,0,NA,NA,NA,27,NA,Mornington Peninsula,Southern Region,2017,2853,1587 point nepean,2754,84,0.128433127,further checking,47.58997793
+R00357,Completed,2004,5.17,NA,None,NA,Sandown,Road,NA,Springvale,0,NA,NA,0,0,60,0,60,NA,Greater Dandenong,South,2006,389,NA sandown,290,85,0.180776161,further checking,3.495182996
+R10944,Completed,2016,0.180847,Eighth Boulevard Townhouses,NA,35-39,Eighth,Boulevard,NA,Springvale,0,18,0,0,NA,NA,NA,18,4,Greater Dandenong,Southern Region,2017,2881,35-39 eighth,2782,85,0.180776161,further checking,99.96082842
+R08356,Completed,2012,0.05,Claremont Street Apartment Building,NA,43-45,Claremont,Street,NA,South Yarra,0,NA,NA,0,0,0,73,73,NA,Stonnington,Inner,2013,1994,43-45 claremont,1895,86,0.04876461,further checking,99.96890445
+R09079,Completed,2016,0.09767752,Prime Tower,NA,45-47,Claremont,Street,NA,South Yarra,0,0,59,0,NA,NA,NA,59,15,Stonnington,Inner South East Region,2017,3068,45-47 claremont,2969,86,0.04876461,further checking,49.92408584
+R00990,Completed,2004,0.61,MECWA Aged Care Facility,None,7-Nov,Elm,Road,NA,Glen Iris,0,NA,NA,0,0,21,0,21,NA,Stonnington,East,2005,209,7-11 elm,110,87,0.597469617,further checking,97.84077585
+R13443,Completed,2016,0.59759682,Mecwacare,NA,7,Elm,Road,NA,Glen Iris,0,0,23,0,NA,NA,NA,23,3,Stonnington,Inner South East Region,2017,3078,7 elm,2979,87,0.597469617,further checking,99.9787175
+R07301,Completed,2010,0.19,Commercial Road Development,NA,132-152,Commerical,Road,NA,Prahran,0,NA,NA,42,0,0,0,42,NA,Stonnington,Inner,2010,1047,132-152 commerical,948,88,0.19160816,further checking,99.90170261
+R11308,Completed,2016,0.19187094,NA,NA,132-152,Commercial,Road,NA,Prahran,0,0,0,140,NA,NA,NA,140,9,Stonnington,Inner South East Region,2017,3098,132-152 commercial,2999,88,0.19160816,further checking,99.86304516
+R08027,Completed,2012,32.93,Lalor Golf Course,NA,50,Gillwell,Road,NA,Lalor,0,NA,NA,450,0,0,0,450,NA,Whittlesea,North,2013,1755,50 gillwell,1656,89,0.337241543,further checking,1.023755979
+R13617,Completed,2016,0.33724153,Mosaic Drive Units,NA,200R,Mosaic,Road,NA,Lalor,0,15,0,0,NA,NA,NA,15,2,Whittlesea,Northern Region,2017,3120,200R mosaic,3021,89,0.337241543,further checking,100
+R00295,Completed,2004,0.32,Barkly Street Apartments,None,227-231,Barkly,Street,NA,Brunswick,0,NA,NA,0,0,49,0,49,NA,Moreland,North,2007,465,227-231 barkly,366,90,0.321164317,further checking,99.96620352
+R10310,Completed,2016,0.67916906,NA,NA,227-231,Barkly,Street,NA,Brunswick,0,0,0,65,NA,NA,NA,65,2,Moreland,Northern Region,2017,3135,227-231 barkly,3036,90,0.321164317,further checking,47.28783269
+R08836,Completed,2011,0.2,Dickens Street Apartment Complex,NA,Dec-14,Dickens,STREET,NA,Elwood,0,NA,NA,8,0,50,0,58,NA,Port Phillip,Inner,2012,1702,12/14 dickens,1603,91,0.19723327,further checking,99.99256895
+R12559,Completed,2016,0.21979727,Canopy Apartments,NA,Dec-14,Dickens,Street,NA,Elwood,0,0,61,0,NA,NA,NA,61,4,Port Phillip,Inner Metro Region,2017,3181,12-14 dickens,3082,91,0.19723327,further checking,89.73417559
+R07995,Completed,2011,0.08,NA,NA,147-155,Eastern,ROAD,NA,South Melbourne,0,NA,NA,0,0,0,32,32,NA,Port Phillip,Inner,2012,1660,147-155 eastern,1561,92,0.079511974,further checking,100
+R12598,Completed,2016,0.07951198,Momentum,NA,147-155,Eastern,Road,NA,South Melbourne,0,0,54,0,NA,NA,NA,54,6,Port Phillip,Inner Metro Region,2017,3185,147-155 eastern,3086,92,0.079511974,further checking,100
+R00094,Completed,2007,3.04,Hoffman Brickworks,None,72-106,Dawson,Street,NA,Brunswick,0,NA,NA,0,0,265,0,265,NA,Moreland,North,2007,447,72-106 dawson,348,93,0.720492373,further checking,23.6812219
+R05784,Completed,2016,0.72049236,Dawson Street Gatehouse,NA,72-106,Dawson,Street,NA,Brunswick,0,0,54,0,NA,NA,NA,54,4,Moreland,Northern Region,2017,3207,72-106 dawson,3108,93,0.720492373,further checking,100
+R05280,Completed,2005,0.26,Victoria Street Brewery,Stage 1,388-410,Victoria,Street,NA,North Melbourne,0,NA,NA,144,0,0,0,144,NA,Melbourne,Inner,2006,415,388-410 victoria,316,94,0.081880898,further checking,31.80873814
+R07388,Completed,2016,0.08189954,Victoria Street Residential/warehouse/showroom,NA,392-398,Victoria,Street,NA,North Melbourne,0,0,16,0,NA,NA,NA,16,4,Melbourne,Inner Metro Region,2017,3246,392-398 victoria,3147,94,0.081880898,further checking,99.97723677
+R07889,Completed,2012,0.69,Stadium Precinct - Lacrosse Stafe 1 (east Tower),NA,673-675,La Trobe,Street,NA,Docklands,0,NA,NA,0,0,0,312,312,NA,Melbourne,Inner,2013,1909,673-675 la trobe,1810,95,0.312160835,further checking,45.24363982
+R12657,Completed,2016,0.31681681,Stadium precinct - la crosse stage 2 - west tower,NA,675,La Trobe Street,Road,NA,Docklands,0,0,186,0,NA,NA,NA,186,18,Melbourne,Inner Metro Region,2017,3254,675 la trobe street,3155,95,0.312160835,further checking,98.53038757
+R00687,Completed,2008,0.9,Waterford Green NE,NA,50,Wests,Road,NA,Maribyrnong,0,NA,NA,0,0,271,0,271,NA,Maribyrnong,West,2009,551,50 wests,452,97,0.154307941,further checking,17.09275183
+R11301,Completed,2016,0.15517014,Building C,NA,62,Wests,Road,NA,Maribyrnong,0,0,72,0,NA,NA,NA,72,8,Maribyrnong,Western Region,2017,3290,62 wests,3191,97,0.154307941,further checking,99.44435533
+R10479,Completed,2012,0.12,Lofts 601 On Little Collins,NA,601-611,Little Collins,St,NA,Melbourne,0,NA,NA,0,0,0,21,21,NA,Melbourne,Inner,2013,1928,601-611 little collins,1829,98,0.12366908,further checking,100
+R12819,Completed,2016,0.12366908,Lofts 601 on Little Collins,NA,601-611,Little Collins,Street,NA,Melbourne,0,0,0,85,NA,NA,NA,85,NA,Melbourne,Inner Metro Region,2017,3294,601-611 little collins,3195,98,0.12366908,further checking,100
+R10500,Completed,2012,0.17,Infinity 8,NA,243-263,Franklin,Street,NA,Melbourne,0,NA,NA,0,0,0,168,168,NA,Melbourne,Inner,2013,1930,243-263 franklin,1831,99,0.16529147,further checking,99.86419673
+R10501,Completed,2012,0.17,Infinity 88 - Stage 1,NA,243-263,Franklin,Street,NA,Melbourne,0,NA,NA,0,0,0,93,93,NA,Melbourne,Inner,2013,1931,243-263 franklin,1832,99,0.16529147,further checking,99.86419673
+R12832,Completed,2016,0.16529147,Grand 8 Hotel - Stage 3,NA,243-263,Franklin,Street,NA,Melbourne,0,0,0,54,NA,NA,NA,54,NA,Melbourne,Inner Metro Region,2017,3295,243-263 franklin,3196,99,0.16529147,further checking,100
+R06546,Completed,2014,0.14,Albert Road Units,NA,42,Albert,ROAD,NA,South Melbourne,0,NA,NA,0,0,0,220,220,NA,Port Phillip,Inner,2015,2336,42 albert,2237,100,0.130027406,further checking,93.55670212
+R11867,Completed,2016,0.15200859,50 Albert,NA,42-50,Albert,Road,& 42 & 44-50 Albert Rd,South Melbourne,0,0,294,0,NA,NA,NA,294,28,Port Phillip,Inner Metro Region,2017,3308,42-50 albert,3209,100,0.130027406,further checking,85.53951333
+R06361,Completed,2012,17.01,Janefield,NA,NA,NA,Road,NA,Bundoora,0,NA,NA,0,0,350,0,350,NA,Whittlesea,North,2013,1741,NA NA,1642,101,1.81676709,further checking,10.67403379
+R10618,Completed,2016,1.84666419,Linacre Drive Dwellings,NA,25,Linacre,Drive,NA,Bundoora,0,58,0,0,NA,NA,NA,58,2,Whittlesea,Northern Region,2017,3311,25 linacre,3212,101,1.81676709,further checking,98.38102314
+R00098,Completed,2007,2.69,Horizon Estate,NA,Cnr,Warrs & Van Ness,Road,NA,Maribyrnong,0,NA,NA,0,0,138,0,138,NA,Maribyrnong,West,2010,583,Cnr warrs & van ness,484,102,0.16540343,further checking,6.142615484
+R17127,Completed,2017,0.16540343,11 horizon drive,NA,11,horizon,Drive,NA,Maribyrnong,0,0,28,0,NA,NA,NA,28,6,MARIBYRNONG,Western,2018,3338,11 horizon,3239,102,0.16540343,further checking,100
+R07658,Completed,2009,0.14,Jetty Road Apartments/retail/restaurant,NA,1A,Jetty,Road,NA,Rosebud,0,NA,NA,0,0,10,0,10,NA,Mornington Peninsula,South,2011,1474,1A jetty,1375,103,0.136399428,further checking,99.96018426
+R13383,Completed,2017,0.2532514,Banksia Point Apartments,NA,1A,Jetty,Road,& cnr Pt Nepean Hwy,Rosebud,0,0,34,0,NA,NA,NA,34,3,MORNINGTON PENINSULA,Southern,2018,3416,1A jetty,3317,103,0.136399428,further checking,53.8592987
+R00418,Completed,2006,17.98,Commonwealth Games Village,NA,944-1000,"Park [Oak, Tullamarine, Gibson]",Street,NA,Parkville,168,NA,NA,0,0,650,0,818,NA,Melbourne,Inner,2008,542,"944-1000 park [oak, tullamarine, gibson]",443,104,0.113339755,further checking,0.630227477
+R13842,Completed,2017,0.14258115,Flourish Parkside,NA,51-55,Galada,Avenue,NA,Parkville,0,0,136,0,NA,NA,NA,136,14,MELBOURNE,Inner,2018,3430,51-55 galada,3331,104,0.113339755,further checking,79.49140246
+R00418,Completed,2006,17.98,Commonwealth Games Village,NA,944-1000,"Park [Oak, Tullamarine, Gibson]",Street,NA,Parkville,168,NA,NA,0,0,650,0,818,NA,Melbourne,Inner,2008,542,"944-1000 park [oak, tullamarine, gibson]",443,105,0.106289587,further checking,0.591024907
+R13859,Completed,2017,0.13732214,Thrive Parkside,NA,90,Cade,Way,NA,Parkville,0,0,134,0,NA,NA,NA,134,14,MELBOURNE,Inner,2018,3431,90 cade,3332,105,0.106289587,further checking,77.40164094
+R05174,Completed,2013,0.24,Lillimur Road Apartments,NA,14-18,Lillimur,Road,NA,Ormond,0,NA,NA,0,0,12,0,12,NA,Glen Eira,South,2014,2052,14-18 lillimur,1953,106,0.078700134,further checking,32.95549667
+R14790,Completed,2017,0.07873399,Lillimur Road Apartments,NA,18,Lillimur,Road,NA,Ormond,0,0,15,0,NA,NA,NA,15,3,GLEN EIRA,Inner South East,2018,3584,18 lillimur,3485,106,0.078700134,further checking,99.95700171
+R00129,Completed,2004,0.28,Living Springs,None,470-496,Swanston,Street,NA,Carlton,0,NA,NA,0,0,0,171,171,NA,Melbourne,Inner,2006,356,470-496 swanston,257,107,0.277294531,further checking,99.91741557
+R12820,Completed,2017,0.27881974,Arrow on Swanston extension,NA,470-496,Swanston,Street,NA,Carlton,0,0,0,10,NA,NA,NA,10,12,MELBOURNE,Inner,2018,3652,470-496 swanston,3553,107,0.277294531,further checking,99.45297388
+R09080,Completed,2016,0.11,White Street Affordable Housing,NA,88-90,White,Street,NA,Mordialloc,0,NA,NA,0,0,34,0,34,NA,Kingston,South,2016,2521,88-90 white,2422,108,0.106160474,further checking,99.77336871
+R15755,Completed,2017,0.21655472,NA,NA,88,White,Street,NA,Mordialloc,0,0,16,0,NA,NA,NA,16,3,KINGSTON,Southern,2018,3692,88 white,3593,108,0.106160474,further checking,49.0224731
+R08304,Completed,2012,0.11,White Street Dwellings,NA,90,White,Street,NA,Mordialloc,0,NA,NA,0,0,18,0,18,NA,Kingston,South,2013,1815,90 white,1716,109,0.107129765,further checking,99.73302745
+R15755,Completed,2017,0.21655472,NA,NA,88,White,Street,NA,Mordialloc,0,0,16,0,NA,NA,NA,16,3,KINGSTON,Southern,2018,3692,88 white,3593,109,0.107129765,further checking,49.47006935
+R03490,Completed,2004,0.47,Red Cross Site,None,Jan-25,Balston,Street,NA,Southbank,0,NA,NA,0,0,0,277,277,NA,Melbourne,Inner,2005,310,1-25 balston,211,110,0.23628699,further checking,50.6920165
+R12101,Completed,2017,0.23711316,Southbank Central,NA,Jan-13,Balston,Street,NA,Southbank,0,0,485,0,NA,NA,NA,485,47,MELBOURNE,Inner,2018,3727,1-13 balston,3628,110,0.23628699,further checking,99.65156818
+R00376,Completed,2011,0.71,Wheelans Site,NA,597-605,Sydney,ROAD,NA,Brunswick,0,NA,NA,0,0,0,163,163,NA,Moreland,North,2012,1706,597-605 sydney,1607,111,0.09424278,further checking,13.26930976
+R11467,Completed,2017,0.09472666,Breese Street Apartment Building,NA,26,Breese,Street,NA,Brunswick,0,0,65,0,NA,NA,NA,65,7,MORELAND,Northern,2018,3736,26 breese,3637,111,0.09424278,further checking,99.4891861
+R11334,Completed,2016,0.09,Henry Windsor Apartments,NA,60-64,Punt,Road,NA,Windsor,0,NA,NA,0,0,0,33,33,NA,Stonnington,Inner,2016,2644,60-64 punt,2545,112,0.093772996,further checking,99.94390467
+R14300,Completed,2017,0.0938733,Henry Windsor Apartments,NA,46-48,Punt,Road,NA,Windsor,0,0,53,0,NA,NA,NA,53,8,STONNINGTON,Inner South East,2018,3739,46-48 punt,3640,112,0.093772996,further checking,99.89314946
+R00687,Completed,2008,0.9,Waterford Green NE,NA,50,Wests,Road,NA,Maribyrnong,0,NA,NA,0,0,271,0,271,NA,Maribyrnong,West,2009,551,50 wests,452,113,0.208227564,further checking,23.06544988
+R15059,Completed,2017,0.20822756,Building B,NA,62,Wests,Road,NA,Maribyrnong,0,0,93,0,NA,NA,NA,93,12,MARIBYRNONG,Western,2018,3740,62 wests,3641,113,0.208227564,further checking,100
+R00098,Completed,2007,2.69,Horizon Estate,NA,Cnr,Warrs & Van Ness,Road,NA,Maribyrnong,0,NA,NA,0,0,138,0,138,NA,Maribyrnong,West,2010,583,Cnr warrs & van ness,484,115,0.137520216,further checking,5.107111774
+R15984,Completed,2017,0.13752021,8 Horizon Drive,NA,8,Horizon,Road,NA,Maribyrnong,0,0,38,0,NA,NA,NA,38,6,MARIBYRNONG,Western,2018,3802,8 horizon,3703,115,0.137520216,further checking,100
+R00030,Completed,2006,13.16,River Valley Estate,Stage 1,NA,Duke,Road,NA,Sunshine North,195,NA,NA,0,0,0,0,195,NA,Brimbank,West,2007,441,NA duke,342,116,0.329748915,further checking,2.503809379
+R08740,Completed,2018,0.32983863,St Andrews Drive Terraces,NA,60,St Andrews,Drive,NA,Sunshine North,0,22,0,0,NA,NA,NA,22,3,BRIMBANK,Western,2019,3890,60 st andrews,3791,116,0.329748915,further checking,99.97279546
+R00318,Completed,2009,0.7,Ballan Road Townhouses,NA,Lot2/LP217962,Ballan,Road,NA,Wyndham Vale,0,NA,NA,0,0,23,0,23,NA,Wyndham,West,2011,1104,Lot2/LP217962 ballan,1005,117,0.493595278,further checking,70.30485856
+R15535,Completed,2018,0.4940483,NA,NA,4,Nepean,Court,NA,Wyndham Vale,24,0,0,0,NA,NA,NA,24,1,WYNDHAM,Western,2019,3894,4 nepean,3795,117,0.493595278,further checking,99.90830455
+R03471,Completed,2008,0.85,NA,NA,Cnr,Albert Park & Bear,Street,NA,Mordialloc,0,NA,NA,0,0,14,0,14,NA,Kingston,South,2010,717,Cnr albert park & bear,618,118,0.693732039,further checking,81.16230606
+R09342,Completed,2018,0.70014399,Park Street Dwellings,NA,76,Albert,Street,NA,Mordialloc,0,66,0,0,NA,NA,NA,66,3,KINGSTON,Southern,2019,3907,76 albert,3808,118,0.693732039,further checking,99.08419122
+R07334,Completed,2008,0.17,Bay Road Dwellings,NA,88,Bay,Road,NA,Sandringham,0,NA,NA,0,0,5,0,5,NA,Bayside,South,2009,569,88 bay,470,119,0.16557586,further checking,99.44917254
+R14709,Completed,2018,0.1660804,Bay Road Apartments,NA,86-88,Bay,Road,NA,Sandringham,0,0,22,0,NA,NA,NA,22,3,BAYSIDE,Inner South East,2019,3955,86-88 bay,3856,119,0.16557586,further checking,99.69620937
+R13542,Completed,2016,0.1,Nicholson St Townhouses,NA,582-600,Nicholson,Street,NA,Fitzroy North,0,NA,NA,0,0,10,0,10,NA,Yarra,Inner,2016,2661,582-600 nicholson,2562,120,0.09529555,further checking,99.95967942
+R13844,Completed,2018,0.70333594,Nicholson and Reid,NA,582-600,Nicholson,Street,NA,Fitzroy North,0,57,35,0,NA,NA,NA,92,3,YARRA,Inner Metro,2019,4061,582-600 nicholson,3962,120,0.09529555,further checking,13.54908024
+R10768,Completed,2016,0.07,Nicholson & Reid,NA,582-600,Nicholson,Street,NA,Fitzroy North,0,NA,NA,0,0,0,36,36,NA,Yarra,Inner,2016,2650,582-600 nicholson,2551,121,0.073124894,further checking,99.8957228
+R13844,Completed,2018,0.70333594,Nicholson and Reid,NA,582-600,Nicholson,Street,NA,Fitzroy North,0,57,35,0,NA,NA,NA,92,3,YARRA,Inner Metro,2019,4061,582-600 nicholson,3962,121,0.073124894,further checking,10.39686593
+R00687,Completed,2008,0.9,Waterford Green NE,NA,50,Wests,Road,NA,Maribyrnong,0,NA,NA,0,0,271,0,271,NA,Maribyrnong,West,2009,551,50 wests,452,123,0.211722962,further checking,23.45263641
+R15060,Completed,2019,0.21499933,Building A,NA,62,Wests,Road,NA,Maribyrnong,0,0,182,0,NA,NA,NA,182,18,MARIBYRNONG,Western,2020,4288,62 wests,4189,123,0.211722962,further checking,98.47609873
+R00622,Completed,2005,0.04,Buckey Hall,None,63,Buckley,Street,NA,Moonee Ponds,0,NA,NA,0,0,24,0,24,NA,Moonee Valley,West,2005,298,63 buckley,199,124,0.044727458,further checking,99.96716406
+R12674,Completed,2019,0.41997913,NA,NA,63-69,Buckley,Street,NA,Moonee Ponds,0,29,0,0,NA,NA,NA,29,2,MOONEE VALLEY,Western,2020,4320,63-69 buckley,4221,124,0.044727458,further checking,10.64992426
+R06361,Completed,2012,17.01,Janefield,NA,NA,NA,Road,NA,Bundoora,0,NA,NA,0,0,350,0,350,NA,Whittlesea,North,2013,1741,NA NA,1642,126,0.694714547,further checking,4.081649534
+R17128,Completed,2019,0.69471455,Janefield Drive Townhouses,Part 1,33,Janefield,Road,NA,Bundoora,0,31,0,0,NA,NA,NA,31,2,WHITTLESEA,Northern,2020,4411,33 janefield,4312,126,0.694714547,further checking,100
+R0796,Completed,2004,4.39,Gas & Fuel site,None,36-58,Macaulay,Road,NA,NORTH MELBOURNE,0,NA,NA,0,0,0,260,260,NA,Melbourne,Inner,2004,65,36-58 macaulay,15,127,0.812248408,further checking,18.46983208
+R11446,Completed,2019,0.81230265,Canning and Vaughan,NA,101-133,Canning,Street,NA,North Melbourne,0,0,292,0,NA,NA,NA,292,16,MELBOURNE,Inner,2020,4415,101-133 canning,4316,127,0.812248408,further checking,99.9933216
+R11663,Completed,2016,0.14674671,New Street Apartments,NA,2,Well,Street,& 190-192 New St,Brighton,0,0,27,0,NA,NA,NA,27,3,Bayside,Inner South East Region,2017,2972,2 well,2873,128,0.145535439,further checking,99.17458118
+R17480,Completed,2020,0.14589334,NEW AND WELL STREETS APARTMENTS,NA,NA,NEW,STREET,NA,BRIGHTON,0,0,27,0,NA,NA,NA,27,3,BAYSIDE,Inner South East,2021,4457,NA new,4358,128,0.145535439,further checking,99.75468974
+R12218,Completed,2017,0.39561015,Landcox Street Townhouses,NA,15,Landcox,Road,NA,Brighton East,0,25,0,0,NA,NA,NA,25,2,BAYSIDE,Inner South East,2018,3394,15 landcox,3295,129,0.389048152,further checking,98.34129797
+R17484,Completed,2020,0.38914457,LANDCOX STREET DWELLINGS,NA,17-21,LANDCOX,STREET,NA,BRIGHTON EAST,20,0,0,0,NA,NA,NA,20,2,BAYSIDE,Inner South East,2021,4458,17-21 landcox,4359,129,0.389048152,further checking,99.97522016
+R16125,Completed,2017,0.12078658,NA,NA,5-Jul,Orr,Street,NA,Heidelberg Heights,0,12,0,0,NA,NA,NA,12,2,BANYULE,Northern,2018,3357,5-7 orr,3258,130,0.120786577,further checking,100
+R17790,Completed,2020,0.1214999,ORR STREET TOWNHOUSES,NA,NA,ORR,STREET,NA,HEIDELBERG HEIGHTS,0,12,0,0,NA,NA,NA,12,2,BANYULE,Northern,2021,4467,NA orr,4368,130,0.120786577,further checking,99.41289913
+R16393,Completed,2017,0.213526,Cirqua Apartments,NA,204-206,Lower Heidelberg ,Road,NA,Ivanhoe East,0,0,42,0,NA,NA,NA,42,3,BANYULE,Northern,2018,3364,204-206 lower heidelberg ,3265,131,0.213525535,further checking,99.99978692
+R17794,Completed,2020,0.29654691,NA,NA,NA,LOWER HEIDELBERG,ROAD,NA,IVANHOE EAST,0,0,44,0,NA,NA,NA,44,0,BANYULE,Northern,2021,4468,NA lower heidelberg,4369,131,0.213525535,further checking,72.00396555
+R10939,Completed,2016,0.08298266,Cirqua,NA,204-208,Lower Heidelberg,Road,NA,Ivanhoe East,0,0,14,0,NA,NA,NA,14,4,Banyule,Northern Region,2017,3202,204-208 lower heidelberg,3103,132,0.08290904,further checking,99.9112814
+R17794,Completed,2020,0.29654691,NA,NA,NA,LOWER HEIDELBERG,ROAD,NA,IVANHOE EAST,0,0,44,0,NA,NA,NA,44,0,BANYULE,Northern,2021,4468,NA lower heidelberg,4369,132,0.08290904,further checking,27.95815329
+R09345,Completed,2015,0.06,Cape Street Apartments,NA,119,Cape,Street,NA,Heidelberg,0,NA,NA,0,0,12,0,12,NA,Banyule,North,2016,2676,119 cape,2577,133,0.063413103,further checking,99.6947559
+R17795,Completed,2020,0.06377132,NA,NA,NA,CAPE,STREET,NA,HEIDELBERG,0,0,14,0,NA,NA,NA,14,0,BANYULE,Northern,2021,4469,NA cape,4370,133,0.063413103,further checking,99.4382704
+R11600,Completed,2016,0.10426983,Lower Plenty Road Apartments,NA,172,Lower Plenty,Road,NA,Rosanna,0,0,12,0,NA,NA,NA,12,3,Banyule,Northern Region,2017,3168,172 lower plenty,3069,134,0.103670016,further checking,99.42474661
+R17799,Completed,2020,0.10370955,LOWER PLENTY ROAD APARTMENT BUILDING ROSANNA,NA,NA,LOWER PLENTY,ROAD,NA,ROSANNA,0,0,12,0,NA,NA,NA,12,3,BANYULE,Northern,2021,4471,NA lower plenty,4372,134,0.103670016,further checking,99.961879
+R00611,Completed,2008,4.69,Essence Estate,NA,81-87,Mitchell,Street,NA,Maidstone,80,NA,NA,0,0,20,0,100,NA,Maribyrnong,West,2011,1124,81-87 mitchell,1025,135,0.183287703,further checking,3.906748651
+R13769,Completed,2020,0.18537237,NA,NA,49,Rosamond,Road,NA,MAIDSTONE,0,14,0,0,NA,NA,NA,14,2,MARIBYRNONG,Western,2021,4831,49 rosamond,4732,135,0.183287703,further checking,98.87541373
+R03361,Completed,2004,12.36,Edgewater Estate,Stage 1,NA,Gordon,Street,NA,Maribyrnong,0,NA,NA,150,0,0,0,150,NA,Maribyrnong,West,2005,304,NA gordon,205,136,0.148356089,further checking,1.200065203
+R08918,Completed,2013,11.39,Edgewater Estate B1,NA,NA,Edgewater,Boulevard,NA,Maribyrnong,0,NA,NA,0,0,177,0,177,NA,Maribyrnong,Inner,2014,2068,NA edgewater,1969,136,0.148356089,further checking,1.301664084
+R18050,Completed,2021,0.2914812,NA,NA,449,GORDON,STREET,NA,MARIBYRNONG,0,20,0,0,NA,NA,NA,20,3,MARIBYRNONG,Western,2021,4963,449 gordon,4864,136,0.148356089,further checking,50.89731035
+R00093,Completed,2004,0.74,NA,None,209-269,Stewart,Street,NA,Brunswick East,0,NA,NA,0,0,63,48,111,NA,Moreland,North,2005,268,209-269 stewart,169,151,0.3384259,further checking,45.58917531
+2022_164,Completed,2022,0.3502,NA,NA,NA,NA,NA,NA,NA,0,0,69,0,NA,NA,NA,69,6,NA,NA,2022,5003,NA NA,4904,151,0.3384259,further checking,96.63785448
+R14259,Completed,2017,0.23107712,NA,NA,2-Aug,Dart,Street,NA,Highett,0,43,0,0,NA,NA,NA,43,5,BAYSIDE,Inner South East,2018,3567,2-8 dart,3468,152,0.228427139,further checking,98.85320244
+R17497,Completed,2021,0.23142849,DART STREET APARTMENTS,NA,6,MAJOR,Street,NA,HIGHETT,0,0,45,0,NA,NA,NA,45,3,BAYSIDE,Inner South East,2021,4715,6 major,4616,152,0.228427139,further checking,98.70311811
+2022_167,Completed,2021,0.23,NA,NA,NA,NA,NA,NA,NA,0,0,45,0,NA,NA,NA,45,3,NA,NA,2022,5005,NA NA,4906,152,0.228427139,further checking,99.31624499
+R11266,Completed,2021,0.04333862,NA,NA,8-Oct,New,Road,NA,RICHMOND,0,0,18,0,NA,NA,NA,18,5,YARRA,Inner,2021,4855,8-10 new,4756,166,0.040631042,further checking,93.75250221
+2022_302,Completed,2021,0.0409,NA,NA,NA,NA,NA,NA,NA,0,0,18,0,NA,NA,NA,18,5,NA,NA,2022,5027,NA NA,4928,166,0.040631042,further checking,99.34258712
+R16413,Completed,2021,0.05217739,NA,NA,16-20,Howard,Street,NA,NORTH MELBOURNE,0,0,10,0,NA,NA,NA,10,3,MELBOURNE,Inner,2021,4930,16-20 howard,4831,175,0.050499267,further checking,96.78381043
+2022_368,Completed,2021,0.05065,NA,NA,NA,NA,NA,NA,NA,0,0,10,0,NA,NA,NA,10,3,NA,NA,2022,5038,NA NA,4939,175,0.050499267,further checking,99.70246443
+R16198,Completed,2021,0.05878424,Nightingale Terrace House (Nightingale 3),NA,209,Sydney,Road,NA,BRUNSWICK,0,0,20,0,NA,NA,NA,20,7,MORELAND,Northern,2021,4576,209 sydney,4477,180,0.056448904,further checking,96.02728338
+2022_384,Completed,2021,0.0565,NA,NA,NA,NA,NA,NA,NA,0,0,20,0,NA,NA,NA,20,7,NA,NA,2022,5046,NA NA,4947,180,0.056448904,further checking,99.91015917
+R15106,Completed,2021,0.10698875,Surrey Gardens,NA,288,Canterbury,Road,NA,SURREY HILLS,0,17,0,0,NA,NA,NA,17,3,BOROONDARA,Inner South East,2021,4688,288 canterbury,4589,191,0.10640554,further checking,99.45488798
+2022_454,Completed,2021,0.10935,NA,NA,NA,NA,NA,NA,NA,0,17,0,0,NA,NA,NA,17,3,NA,NA,2022,5063,NA NA,4964,191,0.10640554,further checking,97.30760939
+R15373,Completed,2021,0.18591507,NA,NA,May-15,Kent,Avenue,NA,CROYDON,20,0,0,0,NA,NA,NA,20,2,MAROONDAH,Eastern,2021,4840,5-15 kent,4741,194,0.181246625,further checking,97.48894091
+2022_474,Completed,2021,0.1814,NA,NA,NA,NA,NA,NA,NA,20,0,0,0,NA,NA,NA,20,2,NA,NA,2022,5069,NA NA,4970,194,0.181246625,further checking,99.91562197
+R11767,Completed,2021,0.07905082,Glen Huntly Road Apartment Building,NA,538,Glen Huntly,Road,NA,ELSTERNWICK,0,0,15,0,NA,NA,NA,15,3,GLEN EIRA,Inner South East,2021,4725,538 glen huntly,4626,206,0.078852638,further checking,99.74929694
+2022_609,Completed,2021,0.08095,NA,NA,NA,NA,NA,NA,NA,0,0,15,0,NA,NA,NA,15,3,NA,NA,2022,5094,NA NA,4995,206,0.078852638,further checking,97.40889798
+R00405,Completed,2015,26.8,Kew Residential Services Aka Kew Cottages Redevelo,NA,117,Princess,Street,NA,Kew,420,NA,NA,0,0,100,0,520,NA,Boroondara,East,2016,2499,117 princess,2400,210,0.983049901,further checking,3.667072927
+2022_632,Completed,2022,0.98305,NA,NA,NA,NA,NA,NA,NA,0,0,17,0,NA,NA,NA,17,3,NA,NA,2022,5101,NA NA,5002,210,0.983049901,further checking,100
+R05362,Completed,2010,5.16,Lancaster Gate,NA,NA,Plenty,Road,NA,Bundoora,40,NA,NA,0,0,0,0,40,NA,Darebin,North,2011,1258,NA plenty,1159,218,0.1620123,further checking,3.136547757
+R16665,Completed,2021,0.27528545,Galileo Gateway Townhouses,NA,NA,Galileo,Gateway,NA,BUNDOORA,0,14,0,0,NA,NA,NA,14,2,DAREBIN,Northern,2021,4671,NA galileo,4572,218,0.1620123,further checking,58.85247392
+2022_686,Completed,2021,0.2762,NA,NA,NA,NA,NA,NA,NA,0,14,0,0,NA,NA,NA,14,2,NA,NA,2022,5111,NA NA,5012,218,0.1620123,further checking,58.65753367
+R16147,Completed,2021,0.12299124,7 North,NA,23-25,Clapham,Street,NA,THORNBURY,0,0,27,0,NA,NA,NA,27,3,DAREBIN,Northern,2021,4664,23-25 clapham,4565,248,0.1194777,further checking,97.14326046
+2022_913,Completed,2021,0.1204,NA,NA,NA,NA,NA,NA,NA,0,0,27,0,NA,NA,NA,27,3,NA,NA,2022,5160,NA NA,5061,248,0.1194777,further checking,99.23402839
+R18040,Completed,2021,0.23803018,NA,NA,NA,AITKEN,Street,NA,WILLIAMSTOWN,0,17,0,0,NA,NA,NA,17,3,HOBSONS BAY,Western,2021,4940,NA aitken,4841,253,0.232946901,further checking,97.86443733
+2022_951,Completed,2021,0.24365,NA,NA,NA,NA,NA,NA,NA,0,17,0,0,NA,NA,NA,17,3,NA,NA,2022,5170,NA NA,5071,253,0.232946901,further checking,95.60727622
+R00811,Completed,2004,0.2,NA,None,97-111,Franklin,Street,NA,Melbourne,0,NA,NA,0,0,21,0,21,NA,Melbourne,Inner,2005,239,97-111 franklin,140,274,0.198758999,further checking,99.1975576
+R12621,Completed,2021,0.20017827,NA,NA,97-111,Franklin,Road,NA,MELBOURNE,0,0,142,0,NA,NA,NA,142,60,MELBOURNE,Inner,2021,4908,97-111 franklin,4809,274,0.198758999,further checking,99.2909961
+2022_1107,Completed,2021,0.20075,NA,NA,NA,NA,NA,NA,NA,0,0,142,0,NA,NA,NA,142,60,NA,NA,2022,5211,NA NA,5112,274,0.198758999,further checking,99.00822798
+R13455,Completed,2021,0.09369247,Galloway Drive Apartments,NA,110,Galloway,Drive,NA,MERNDA,0,0,24,0,NA,NA,NA,24,3,WHITTLESEA,Northern,2021,4850,110 galloway,4751,283,0.089359313,further checking,95.37512939
+2022_1174,Completed,2021,0.0896,NA,NA,NA,NA,NA,NA,NA,0,0,24,0,NA,NA,NA,24,3,NA,NA,2022,5226,NA NA,5127,283,0.089359313,further checking,99.73107433
+R14856,Completed,2021,0.07743751,Salisbury Street Mixed Use Development,NA,26,Salisbury,Road,NA,WERRIBEE,0,0,12,0,NA,NA,NA,12,4,WYNDHAM,Western,2021,4854,26 salisbury,4755,295,0.075374258,further checking,97.33559074
+2022_1324,Completed,2021,0.0756,NA,NA,NA,NA,NA,NA,NA,0,0,12,0,NA,NA,NA,12,4,NA,NA,2022,5248,NA NA,5149,295,0.075374258,further checking,99.70149518
+R15816,Completed,2021,0.11469525,NA,NA,Oct-16,Lilydale,Grove,NA,HAWTHORN EAST,0,0,91,0,NA,NA,NA,91,10,BOROONDARA,Inner South East,2021,4695,10-16 lilydale,4596,331,0.1145646,further checking,99.88608812
+2022_1582,Completed,2021,0.1181,NA,NA,NA,NA,NA,NA,NA,0,0,91,0,NA,NA,NA,91,10,NA,NA,2022,5308,NA NA,5209,331,0.1145646,further checking,97.00668012
+R01034,Completed,2004,27.51,The Village Glen Community Village,None,3-Jun,Brickendon,Drive,NA,Rosebud West,101,NA,NA,0,0,0,0,101,NA,Mornington Peninsula,South,2007,493,3-6 brickendon,394,334,0.326367888,further checking,1.185080951
+R17340,Completed,2021,0.32816547,335 Eastbourne,NA,335,Eastboourne,Road,NA,CAPEL SOUND,0,0,16,0,NA,NA,NA,16,3,MORNINGTON PENINSULA,Southern,2021,4944,335 eastboourne,4845,334,0.326367888,further checking,99.45223684
+2022_1607,Completed,2021,0.32855,NA,NA,NA,NA,NA,NA,NA,0,0,16,0,NA,NA,NA,16,3,NA,NA,2022,5312,NA NA,5213,334,0.326367888,further checking,99.33576958
+R11794,Completed,2021,0.03850929,Inkerman Street Apartment Building,NA,71,Inkerman,Street,NA,ST KILDA,0,0,21,0,NA,NA,NA,21,7,PORT PHILLIP,Inner,2021,4949,71 inkerman,4850,344,0.036955398,further checking,95.96488178
+2022_1673,Completed,2021,0.037,NA,NA,NA,NA,NA,NA,NA,0,0,21,0,NA,NA,NA,21,7,NA,NA,2022,5327,NA NA,5228,344,0.036955398,further checking,99.87917267
+R13899,Completed,2021,0.02032752,NA,NA,350,Ascot Vale,Road,NA,MOONEE PONDS,0,0,13,0,NA,NA,NA,13,7,MOONEE VALLEY,Western,2021,4881,350 ascot vale,4782,348,0.019908438,further checking,97.93834036
+2022_1685,Completed,2021,0.0208,NA,NA,NA,NA,NA,NA,NA,0,0,13,0,NA,NA,NA,13,7,NA,NA,2022,5332,NA NA,5233,348,0.019908438,further checking,95.71387069
+R15413,Completed,2021,0.06014745,NA,NA,173-177,Pascoe Vale,Road,NA,MOONEE PONDS,0,0,17,0,NA,NA,NA,17,4,MOONEE VALLEY,Western,2021,4885,173-177 pascoe vale,4786,351,0.05972396,further checking,99.2959116
+2022_1710,Completed,2021,0.0622,NA,NA,NA,NA,NA,NA,NA,0,0,17,0,NA,NA,NA,17,4,NA,NA,2022,5336,NA NA,5237,351,0.05972396,further checking,96.01900688
+R05362,Completed,2010,5.16,Lancaster Gate,NA,NA,Plenty,Road,NA,Bundoora,40,NA,NA,0,0,0,0,40,NA,Darebin,North,2011,1258,NA plenty,1159,357,0.144608768,further checking,2.799616488
+R16659,Completed,2021,0.1943838,Gonella Circuit Townhouses,NA,NA,Gonella,Crescent,NA,BUNDOORA,0,0,10,0,NA,NA,NA,10,2,DAREBIN,Northern,2021,4669,NA gonella,4570,357,0.144608768,further checking,74.39342306
+2022_1771,Completed,2021,0.1933,NA,NA,NA,NA,NA,NA,NA,0,0,10,0,NA,NA,NA,10,2,NA,NA,2022,5349,NA NA,5250,357,0.144608768,further checking,74.81054232
+R15950,Completed,2021,0.1443723, Luxe,NA,1,Middlesex,Road,NA,SURREY HILLS,0,0,20,0,NA,NA,NA,20,4,BOROONDARA,Inner South East,2021,4698,1 middlesex,4599,367,0.13999146,further checking,96.96559447
+2022_1863,Completed,2021,0.1409,NA,NA,NA,NA,NA,NA,NA,0,0,20,0,NA,NA,NA,20,4,NA,NA,2022,5364,NA NA,5265,367,0.13999146,further checking,99.35513827
+R13732,Completed,2021,0.09698335,4248,NA,42-48,Claremont,Street,NA,SOUTH YARRA,0,0,111,0,NA,NA,NA,111,21,STONNINGTON,Inner South East,2021,4962,42-48 claremont,4863,369,0.096461777,further checking,99.46220189
+2022_1882,Completed,2021,0.0999,NA,NA,NA,NA,NA,NA,NA,0,0,111,0,NA,NA,NA,111,21,NA,NA,2022,5366,NA NA,5267,369,0.096461777,further checking,96.5585203
+R13852,Completed,2021,0.04231642,NA,NA,739-739A,High,Street,NA,ARMADALE,0,0,11,0,NA,NA,NA,11,4,STONNINGTON,Inner South East,2021,4618,739-739A high,4519,372,0.041788993,further checking,98.75361692
+2022_1895,Completed,2021,0.0434,NA,NA,NA,NA,NA,NA,NA,0,0,11,0,NA,NA,NA,11,4,NA,NA,2022,5369,NA NA,5270,372,0.041788993,further checking,96.28831774
+R16762,Completed,2021,0.09504749,Tennyson Apartments,NA,96-98,Tennyson,Street,NA,ELWOOD,0,0,14,0,NA,NA,NA,14,3,PORT PHILLIP,Inner,2021,4957,96-98 tennyson,4858,387,0.094896796,further checking,99.84145137
+2022_2078,Completed,2021,0.0974,NA,NA,NA,NA,NA,NA,NA,0,0,14,0,NA,NA,NA,14,3,NA,NA,2022,5402,NA NA,5303,387,0.094896796,further checking,97.42998461
+R14066,Completed,2021,0.14477786,NA,NA,Dec-14,Queen,Street,NA,BLACKBURN,0,0,53,0,NA,NA,NA,53,5,WHITEHORSE,Eastern,2021,4759,12-14 queen,4660,390,0.141497962,further checking,97.73452316
+2022_2118,Completed,2021,0.1415,NA,NA,NA,NA,NA,NA,NA,0,0,53,0,NA,NA,NA,53,5,NA,NA,2022,5412,NA NA,5313,390,0.141497962,further checking,99.99869074
+R16451,Completed,2021,0.11676235,Burwood Highway apartments,NA,32-34,Burwood,Road,NA,HAWTHORN,0,0,20,0,NA,NA,NA,20,5,BOROONDARA,Inner South East,2021,4702,32-34 burwood,4603,400,0.116641083,further checking,99.89614251
+2022_2182,Completed,2021,0.1192,NA,NA,NA,NA,NA,NA,NA,0,0,20,0,NA,NA,NA,20,5,NA,NA,2022,5428,NA NA,5329,400,0.116641083,further checking,97.85312368
+R14926,Completed,2016,0.08,Neerim Road Mixed Use Development,NA,285-287,Neerim,Road,NA,Carnegie,0,NA,NA,0,0,0,48,48,NA,Glen Eira,South,2016,2584,285-287 neerim,2485,415,0.077304898,further checking,99.24197613
+2022_2326,Completed,2022,0.1601,NA,NA,NA,NA,NA,NA,NA,0,0,47,0,NA,NA,NA,47,4,NA,NA,2022,5453,NA NA,5354,415,0.077304898,further checking,48.28535833
+R13947,Completed,2021,0.05525872,NA,NA,629-631,Glen Huntly,Road,NA,CAULFIELD,0,0,15,0,NA,NA,NA,15,5,GLEN EIRA,Inner South East,2021,4733,629-631 glen huntly,4634,417,0.053669188,further checking,97.12346352
+2022_2360,Completed,2021,0.054,NA,NA,NA,NA,NA,NA,NA,0,0,15,0,NA,NA,NA,15,5,NA,NA,2022,5456,NA NA,5357,417,0.053669188,further checking,99.38711081
